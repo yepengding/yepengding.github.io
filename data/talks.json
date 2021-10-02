@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Security in Blockchain Systems",
+    "presenters": [
+      "*Ding, Yepeng"
+    ],
+    "date": "2021, June",
+    "doi": "10.13140/RG.2.2.11223.60326",
+    "links": {
+      "RG": "https://www.researchgate.net/publication/352198623_Security_in_Blockchain_Systems"
+    }
+  },
+  {
+    "title": "Rethinking Decentralized System Development: from Application to Methodology",
+    "presenters": [
+      "*Ding, Yepeng"
+    ],
+    "date": "2020, November",
+    "doi": "10.13140/RG.2.2.20254.15683",
+    "links": {
+      "RG": "https://www.researchgate.net/publication/345142595_Rethinking_Decentralized_System_Development_from_Application_to_Methodology"
+    }
+  }
+]
