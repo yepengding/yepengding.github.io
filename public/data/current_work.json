@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Transition-Oriented Programming",
+    "links": {
+      "TOP, 2020": "https://arxiv.org/abs/2009.06029"
+    }
+  },
+  {
+    "title": "Seniz: A Modeling Language for Formalism-Driven Development ",
+    "links": {
+      "FDD, 2020": "https://www.researchgate.net/publication/346766832_Formalism-Driven_Development_of_Decentralized_Systems",
+      "GitHub": "https://github.com/yepengding/Seniz"
+    }
+  },
+  {
+    "title": "User-Centric and Privacy-Preserving Application Based on Decentralized Techniques",
+    "links": {
+      "Dagbase, 2020": "https://www.researchgate.net/publication/342313874_Dagbase_A_Decentralized_Database_Platform_Using_DAG-Based_Consensus",
+      "Derepo, 2020": "https://www.researchgate.net/publication/342313706_Derepo_A_Distributed_Privacy-Preserving_Data_Repository_with_Decentralized_Access_Control_for_Smart_Health",
+      "Bloccess, 2020": "https://www.researchgate.net/publication/342261396_Bloccess_Towards_Fine-Grained_Access_Control_Using_Blockchain_in_a_Distributed_Untrustworthy_Environment"
+    }
+  },
+  {
+    "title": "Specification and Verification of Decentralized Systems",
+    "links": {
+      "FormalDS, 2020": "https://www.researchgate.net/publication/343291364_Formalizing_and_Verifying_Decentralized_Systems_with_Extended_Concurrent_Separation_Logic",
+      "ECSL, 2020": "https://www.researchgate.net/publication/343252662_Extending_Concurrent_Separation_Logic_to_Enhance_Modular_Formalization"
+    }
+  },
+  {
+    "title": "MyPub: A Decentralized Privacy-Preserving Publishing Platform",
+    "links": {
+      "GitHub": "https://github.com/yepengding/MyPub",
+      "Slide": "https://github.com/yepengding/MyPub/blob/main/doc/talk/MyPub-en.pdf"
+    }
+  }
+]

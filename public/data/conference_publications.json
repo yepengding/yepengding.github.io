@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Formalizing and Verifying Decentralized Systems with Extended Concurrent Separation Logic",
+    "author": [
+      "*Ding, Yepeng",
+      "Sato, Hiroyuki"
+    ],
+    "conference": "International Conference on Algorithms and Architectures for Parallel Processing",
+    "pages": "480-494",
+    "date": "2020, October",
+    "organization": "Springer, Cham",
+    "links": {
+      "springer": "https://link.springer.com/chapter/10.1007%2F978-3-030-60245-1_33",
+      "RG": "https://www.researchgate.net/publication/343291364_Formalizing_and_Verifying_Decentralized_Systems_with_Extended_Concurrent_Separation_Logic"
+    }
+  },
+  {
+    "title": "Dagbase: A Decentralized Database Platform Using DAG-Based Consensus",
+    "author": [
+      "*Ding, Yepeng",
+      "Sato, Hiroyuki"
+    ],
+    "conference": "2020 IEEE 44th Annual Computers, Software, and Applications Conference (COMPSAC)",
+    "pages": "798-807",
+    "date": "2020, July",
+    "organization": "IEEE",
+    "links": {
+      "IEEE": "https://ieeexplore.ieee.org/document/9202805",
+      "RG": "https://www.researchgate.net/publication/342313874_Dagbase_A_Decentralized_Database_Platform_Using_DAG-Based_Consensus"
+    }
+  },
+  {
+    "title": "Derepo: A Distributed Privacy-Preserving Data Repository with Decentralized Access Control for Smart Health",
+    "author": [
+      "*Ding, Yepeng",
+      "Sato, Hiroyuki"
+    ],
+    "conference": "2020 7th IEEE International Conference on Cyber Security and Cloud Computing (CSCloud)/2020 6th IEEE International Conference on Edge Computing and Scalable Cloud (EdgeCom)",
+    "pages": "29-35",
+    "date": "2020, August",
+    "organization": "IEEE",
+    "links": {
+      "IEEE": "https://ieeexplore.ieee.org/document/9170998",
+      "RG": "https://www.researchgate.net/publication/342313706_Derepo_A_Distributed_Privacy-Preserving_Data_Repository_with_Decentralized_Access_Control_for_Smart_Health"
+    }
+  },
+  {
+    "title": "Bloccess: Towards Fine-Grained Access Control Using Blockchain in a Distributed Untrustworthy Environment",
+    "author": [
+      "*Ding, Yepeng",
+      "Sato, Hiroyuki"
+    ],
+    "conference": "2020 8th IEEE International Conference on Mobile Cloud Computing, Services, and Engineering (MobileCloud)",
+    "pages": "17--22",
+    "date": "2020, April",
+    "organization": "IEEE",
+    "links": {
+      "IEEE": "https://ieeexplore.ieee.org/document/9126741",
+      "RG": "https://www.researchgate.net/publication/342261396_Bloccess_Towards_Fine-Grained_Access_Control_Using_Blockchain_in_a_Distributed_Untrustworthy_Environment"
+    }
+  }
+]
