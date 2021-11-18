@@ -30,6 +30,7 @@
   {
     "title": "MyPub: A Decentralized Privacy-Preserving Publishing Platform",
     "links": {
+      "Sunspot, 2021": "https://www.researchgate.net/publication/356027261_Sunspot_A_Decentralized_Framework_Enabling_Privacy_for_Authorizable_Data_Sharing_on_Transparent_Public_Blockchains",
       "GitHub": "https://github.com/yepengding/MyPub",
       "Slide": "https://github.com/yepengding/MyPub/blob/main/doc/talk/MyPub-en.pdf"
     }
