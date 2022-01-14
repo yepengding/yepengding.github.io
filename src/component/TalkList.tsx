@@ -17,7 +17,7 @@ const TalkList = () => {
                 const talks = data.map(d => {
                     return (
                         <li key={d.doi}>
-                            <NameList names={d.presenters}/>&nbsp;
+                            <NameList names={d.presenter}/>&nbsp;
                             ({d.date}). <strong>{d.title}</strong>. {d.doi}.
                             <br/>
                             <LinkList links={d.links}/>

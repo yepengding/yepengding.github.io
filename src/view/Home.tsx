@@ -11,6 +11,7 @@ import Award from "../component/Award";
 import Service from "../component/Service";
 import About from "../component/About";
 import Navigation from "../component/Navigation";
+import ReportList from "../component/ReportList";
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
                 <PublicationList/>
                 <PreprintList/>
                 <TalkList/>
+                <ReportList/>
                 <PastWork/>
                 <Education/>
                 <Award/>

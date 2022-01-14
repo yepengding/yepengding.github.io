@@ -4,38 +4,38 @@ import LinkList from "../widget/LinkList";
 import NameList from "../widget/NameList";
 import {useTranslation} from "react-i18next";
 
-const TalkList = () => {
+const ReportList = () => {
 
     const {t} = useTranslation();
 
-    const [talks, setTalks] = useState<any>([])
+    const [reports, setReports] = useState<any>([])
 
     useEffect(() => {
-        fetch('data/talks.json')
+        fetch('data/reports.json')
             .then(res => res.json())
             .then((data: any[]) => {
-                const talks = data.map(d => {
+                const reports = data.map(d => {
                     return (
-                        <li key={d.doi}>
-                            <NameList names={d.presenters}/>&nbsp;
-                            ({d.date}). <strong>{d.title}</strong>. {d.doi}.
+                        <li key={d.title}>
+                            <NameList names={d.author}/>&nbsp;
+                            ({d.date}). <strong>{d.title}</strong>.
                             <br/>
                             <LinkList links={d.links}/>
                         </li>
                     )
                 })
-                setTalks(talks)
+                setReports(reports)
             })
-    }, [setTalks])
+    }, [setReports])
 
     return (
-        <Box id="talk">
+        <Box id="report">
             <Heading size={5}>
-                {t("talk")}
+                {t("report")}
             </Heading>
             <Content>
                 <ul>
-                    {talks}
+                    {reports}
                 </ul>
             </Content>
 
@@ -43,4 +43,4 @@ const TalkList = () => {
     )
 };
 
-export default TalkList;
+export default ReportList;
