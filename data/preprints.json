@@ -1,5 +1,18 @@
 [
   {
+    "title": "Formalism-Driven Development of Decentralized Systems",
+    "author": [
+      "*Ding, Yepeng",
+      "Sato, Hiroyuki"
+    ],
+    "date": "2020, December",
+    "doi": "arXiv preprint arXiv:2012.04185, to appear in ICECCS 2022",
+    "links": {
+      "arXiv": "https://arxiv.org/abs/2012.04185",
+      "RG": "https://www.researchgate.net/publication/346766832_Formalism-Driven_Development_of_Decentralized_Systems"
+    }
+  },
+  {
     "title": "Sunspot: A Decentralized Framework Enabling Privacy for Authorizable Data Sharing on Transparent Public Blockchains",
     "author": [
       "*Ding, Yepeng",
@@ -23,19 +36,6 @@
     "links": {
       "arXiv": "https://arxiv.org/abs/2009.06029",
       "RG": "https://www.researchgate.net/publication/344244652_Transition-Oriented_Programming_Developing_Verifiable_Systems"
-    }
-  },
-  {
-    "title": "Formalism-Driven Development of Decentralized Systems",
-    "author": [
-      "*Ding, Yepeng",
-      "Sato, Hiroyuki"
-    ],
-    "date": "2020, December",
-    "doi": "arXiv preprint arXiv:2012.04185",
-    "links": {
-      "arXiv": "https://arxiv.org/abs/2012.04185",
-      "RG": "https://www.researchgate.net/publication/346766832_Formalism-Driven_Development_of_Decentralized_Systems"
     }
   },
   {

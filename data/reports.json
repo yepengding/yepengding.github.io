@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Exploiting JNDI Vulnerabilities: Log4j Vulnerability (CVE-2021-44228) as An Example",
+    "author": [
+      "*Ding, Yepeng"
+    ],
+    "date": "2022, January",
+    "links": {
+      "GitHub": "https://github.com/yepengding/log4j-shell-poc-arm64v8",
+      "Slide": "https://github.com/yepengding/log4j-shell-poc-arm64v8/blob/main/ExploitingJNDI.pdf"
+    }
+  },
+  {
+    "title": "MyPub: A Decentralized Privacy-Preserving Publishing Platform",
+    "author": [
+      "*Ding, Yepeng"
+    ],
+    "date": "2021, September",
+    "links": {
+      "GitHub": "https://github.com/yepengding/MyPub",
+      "Slide": "https://github.com/yepengding/MyPub/blob/main/doc/talk/MyPub-en.pdf"
+    }
+  }
+]
