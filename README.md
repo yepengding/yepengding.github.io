@@ -25,10 +25,18 @@ yarn install
 npm run start
 ```
 
-For the OpenSSL compatibility
+For the OpenSSL compatibility,
+
+- Start with below
 
 ```shell
 npm run start_legacy
+```
+
+- Deploy after executing below
+
+```shell
+export NODE_OPTIONS=--openssl-legacy-provider
 ```
 
 ### Build

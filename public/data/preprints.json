@@ -13,19 +13,6 @@
     }
   },
   {
-    "title": "Sunspot: A Decentralized Framework Enabling Privacy for Authorizable Data Sharing on Transparent Public Blockchains",
-    "author": [
-      "*Ding, Yepeng",
-      "Sato, Hiroyuki"
-    ],
-    "date": "2021, November",
-    "doi": "arXiv preprint arXiv:2111.03865, to appear in ICA3PP 2021",
-    "links": {
-      "arXiv": "https://arxiv.org/abs/2111.03865",
-      "RG": "https://www.researchgate.net/publication/356027261_Sunspot_A_Decentralized_Framework_Enabling_Privacy_for_Authorizable_Data_Sharing_on_Transparent_Public_Blockchains"
-    }
-  },
-  {
     "title": "Transition-Oriented Programming for Developing Verifiable Software",
     "author": [
       "*Ding, Yepeng",

@@ -1,5 +1,20 @@
 [
   {
+    "title": "Sunspot: A Decentralized Framework Enabling Privacy for Authorizable Data Sharing on Transparent Public Blockchains",
+    "author": [
+      "*Ding, Yepeng",
+      "Sato, Hiroyuki"
+    ],
+    "conference": "International Conference on Algorithms and Architectures for Parallel Processing",
+    "pages": "693-709",
+    "date": "2021, December",
+    "organization": "Springer, Cham",
+    "links": {
+      "DOI": "https://doi.org/10.1007/978-3-030-95384-3_43",
+      "RG": "https://www.researchgate.net/publication/356027261_Sunspot_A_Decentralized_Framework_Enabling_Privacy_for_Authorizable_Data_Sharing_on_Transparent_Public_Blockchains"
+    }
+  },
+  {
     "title": "Formalizing and Verifying Decentralized Systems with Extended Concurrent Separation Logic",
     "author": [
       "*Ding, Yepeng",
@@ -10,7 +25,7 @@
     "date": "2020, October",
     "organization": "Springer, Cham",
     "links": {
-      "Springer": "https://link.springer.com/chapter/10.1007%2F978-3-030-60245-1_33",
+      "DOI": "https://doi.org/10.1007/978-3-030-60245-1_33",
       "RG": "https://www.researchgate.net/publication/343291364_Formalizing_and_Verifying_Decentralized_Systems_with_Extended_Concurrent_Separation_Logic"
     }
   },
@@ -25,7 +40,7 @@
     "date": "2020, July",
     "organization": "IEEE",
     "links": {
-      "IEEE": "https://ieeexplore.ieee.org/document/9202805",
+      "DOI": "https://doi.org/10.1109/COMPSAC48688.2020.0-164",
       "RG": "https://www.researchgate.net/publication/342313874_Dagbase_A_Decentralized_Database_Platform_Using_DAG-Based_Consensus"
     }
   },
@@ -40,7 +55,7 @@
     "date": "2020, August",
     "organization": "IEEE",
     "links": {
-      "IEEE": "https://ieeexplore.ieee.org/document/9170998",
+      "DOI": "https://doi.org/10.1109/CSCloud-EdgeCom49738.2020.00015",
       "RG": "https://www.researchgate.net/publication/342313706_Derepo_A_Distributed_Privacy-Preserving_Data_Repository_with_Decentralized_Access_Control_for_Smart_Health"
     }
   },
@@ -55,7 +70,7 @@
     "date": "2020, April",
     "organization": "IEEE",
     "links": {
-      "IEEE": "https://ieeexplore.ieee.org/document/9126741",
+      "DOI": "https://doi.org/10.1109/MobileCloud48802.2020.00011",
       "RG": "https://www.researchgate.net/publication/342261396_Bloccess_Towards_Fine-Grained_Access_Control_Using_Blockchain_in_a_Distributed_Untrustworthy_Environment"
     }
   }
