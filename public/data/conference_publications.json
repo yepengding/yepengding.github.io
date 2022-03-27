@@ -1,5 +1,20 @@
 [
   {
+    "title": "Formalism-Driven Development of Decentralized Systems",
+    "author": [
+      "*Ding, Yepeng",
+      "Sato, Hiroyuki"
+    ],
+    "conference": "2022 26th International Conference on Engineering of Complex Computer Systems (ICECCS) ",
+    "pages": "81-90",
+    "date": "2022, March",
+    "organization": "IEEE",
+    "links": {
+      "DOI": "https://doi.org/10.1109/ICECCS54210.2022.00018",
+      "RG": "https://www.researchgate.net/publication/346766832_Formalism-Driven_Development_of_Decentralized_Systems"
+    }
+  },
+  {
     "title": "Sunspot: A Decentralized Framework Enabling Privacy for Authorizable Data Sharing on Transparent Public Blockchains",
     "author": [
       "*Ding, Yepeng",

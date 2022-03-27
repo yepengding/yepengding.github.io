@@ -23,8 +23,8 @@ const Navigation = () => {
                     <Navbar.Item hoverable>
                         <Navbar.Link>{t('publication')}</Navbar.Link>
                         <Navbar.Dropdown>
-                            <Navbar.Item href="#publication">{t('conference')}</Navbar.Item>
-                            <Navbar.Item href="#publication">{t('journal')}</Navbar.Item>
+                            <Navbar.Item href="#conference">{t('conference')}</Navbar.Item>
+                            <Navbar.Item href="#journal">{t('journal')}</Navbar.Item>
                         </Navbar.Dropdown>
                     </Navbar.Item>
                     <Navbar.Item href="#talk">{t('talk')}</Navbar.Item>

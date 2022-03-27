@@ -39,8 +39,8 @@ const About = () => {
                         Scholar</a>]</strong>
                 </p>
 
-                About <strong><a href="https://github.com/yepengding/yepengding.github.io/tree/dev" target="_blank" rel="noreferrer">this
-                website</a></strong>.
+                About <strong><a href="https://github.com/yepengding/yepengding.github.io/tree/dev" target="_blank"
+                                 rel="noreferrer">this website</a></strong> developed for reusable purposes.
             </Content>
 
         </Box>
