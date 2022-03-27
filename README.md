@@ -25,7 +25,13 @@ yarn install
 npm run start
 ```
 
-For the OpenSSL compatibility,
+### Build
+
+```shell
+npm run build
+```
+
+### OpenSSL Compatibility Issue
 
 - Start with below
 
@@ -33,16 +39,10 @@ For the OpenSSL compatibility,
 npm run start_legacy
 ```
 
-- Deploy after executing below
+- Deploy the project after executing below
 
 ```shell
 export NODE_OPTIONS=--openssl-legacy-provider
-```
-
-### Build
-
-```shell
-npm run build
 ```
 
 ## References

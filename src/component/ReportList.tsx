@@ -17,8 +17,8 @@ const ReportList = () => {
                 const reports = data.map(d => {
                     return (
                         <li key={d.title}>
-                            <NameList names={d.author}/>&nbsp;
-                            ({d.date}). <strong>{d.title}</strong>.
+                            <strong>{d.title}</strong> ({d.date})
+                            by <NameList names={d.author}/>.
                             <br/>
                             <LinkList links={d.links}/>
                         </li>
