@@ -1,0 +1,23 @@
+{
+  "ding_formalism-driven_2022-1": {
+    "MDPI": "https://www.mdpi.com/2076-3417/12/7/3415"
+  },
+  "ding_formalism-driven_2022": {
+    "RG": "https://www.researchgate.net/publication/346766832_Formalism-Driven_Development_of_Decentralized_Systems"
+  },
+  "ding_sunspot_2022": {
+    "RG": "https://www.researchgate.net/publication/356027261_Sunspot_A_Decentralized_Framework_Enabling_Privacy_for_Authorizable_Data_Sharing_on_Transparent_Public_Blockchains"
+  },
+  "ding_formalizing_2020": {
+    "RG": "https://www.researchgate.net/publication/343291364_Formalizing_and_Verifying_Decentralized_Systems_with_Extended_Concurrent_Separation_Logic"
+  },
+  "ding_dagbase_2020": {
+    "RG": "https://www.researchgate.net/publication/342313874_Dagbase_A_Decentralized_Database_Platform_Using_DAG-Based_Consensus"
+  },
+  "ding_derepo_2020": {
+    "RG": "https://www.researchgate.net/publication/342313706_Derepo_A_Distributed_Privacy-Preserving_Data_Repository_with_Decentralized_Access_Control_for_Smart_Health"
+  },
+  "ding_bloccess_2020": {
+    "RG": "https://www.researchgate.net/publication/342261396_Bloccess_Towards_Fine-Grained_Access_Control_Using_Blockchain_in_a_Distributed_Untrustworthy_Environment"
+  }
+}

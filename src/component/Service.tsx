@@ -1,6 +1,7 @@
 import {Box, Content, Heading} from 'react-bulma-components';
 import {useTranslation} from "react-i18next";
 import {useEffect, useState} from "react";
+import {ServiceModel} from "../model/Models";
 
 const Service = () => {
 
@@ -16,7 +17,7 @@ const Service = () => {
             .then(res => res.json())
         Promise.all([
             fetchJournalService, fetchConferenceService
-        ]).then((data: any[][]) => {
+        ]).then((data: ServiceModel[][]) => {
             const [jData, cData] = data
             const journalService = jData.map(d => {
                 return (

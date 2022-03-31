@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import LinkList from "../widget/LinkList";
 import NameList from "../widget/NameList";
 import {useTranslation} from "react-i18next";
+import {PreprintModel} from "../model/Models";
 
 const PreprintList = () => {
 
@@ -13,7 +14,7 @@ const PreprintList = () => {
     useEffect(() => {
         fetch('data/preprints.json')
             .then(res => res.json())
-            .then((data: any[]) => {
+            .then((data: PreprintModel[]) => {
                 const preprints = data.map(d => {
                     return (
                         <li key={d.doi}>

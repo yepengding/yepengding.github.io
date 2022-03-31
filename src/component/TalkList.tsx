@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import LinkList from "../widget/LinkList";
 import NameList from "../widget/NameList";
 import {useTranslation} from "react-i18next";
+import {TalkModel} from "../model/Models";
 
 const TalkList = () => {
 
@@ -13,7 +14,7 @@ const TalkList = () => {
     useEffect(() => {
         fetch('data/talks.json')
             .then(res => res.json())
-            .then((data: any[]) => {
+            .then((data: TalkModel[]) => {
                 const talks = data.map(d => {
                     return (
                         <li key={d.doi}>

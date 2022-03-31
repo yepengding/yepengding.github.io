@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import NameList from "../widget/NameList";
 import LinkList from "../widget/LinkList";
 import {useTranslation} from "react-i18next";
-import {Journal, Conference} from "../model/PublicationModels"
+import {BibtexParser, Entry} from "bibtex-js-parser";
 
 const PublicationList = () => {
 
@@ -13,40 +13,65 @@ const PublicationList = () => {
     const [journalPublications, setJournalPublications] = useState<any>([])
 
     useEffect(() => {
-        const fetchJournalPublications = fetch('data/journal_publications.json')
-            .then(res => res.json())
-        const fetchConferencePublications = fetch('data/conference_publications.json')
+        const fetchPublications = fetch('data/publications.bib')
+            .then(res => res.text())
+        const fetchPublicationLinks = fetch('data/publication_links.json')
             .then(res => res.json())
 
         Promise.all([
-            fetchJournalPublications, fetchConferencePublications
-        ]).then((data: [Journal[], Conference[]]) => {
-            const [jData, cData] = data
-            const journalPublications = jData.map(d => {
-                return (
-                    <li key={d.title}>
-                        <NameList names={d.author}/>&nbsp;
-                        ({d.year}). <strong>{d.title}</strong>.
-                        <br/>
-                        <LinkList links={d.links}/>
-                    </li>
-                )
-            })
-            setJournalPublications(journalPublications)
+            fetchPublications, fetchPublicationLinks
+        ]).then((data: [string, any]) => {
+            const [pub_bib, pub_links] = data
+            // Parse BibTeX text to JSON
+            const bibJSON: [Entry] = BibtexParser.parseToJSON(pub_bib);
 
-            const conferencePublications = cData.map(d => {
-                return (
-                    <li key={d.title}>
-                        <NameList names={d.author}/>&nbsp;
-                        ({d.date}). <strong>{d.title}</strong>. In {d.conference} (pp. {d.pages}). {d.organization}.
-                        <br/>
-                        <LinkList links={d.links}/>
-                    </li>
-                )
-            })
-            setConferencePublications(conferencePublications)
+            // Compute Journal Publications
+            const journalPubs = bibJSON
+                .filter(entry => entry.type === "article")
+                .map(e => {
+                    const links: { [k: string]: string } = {};
+                    if (e.doi) {
+                        links['DOI'] = `https://doi.org/${e.doi}`;
+                    }
+                    for (const l in pub_links[e.id]) {
+                        links[l] = pub_links[e.id][l]
+                    }
 
-        })
+                    return (
+                        <li key={e.id}>
+                            <NameList names={e.author ? e.author : 'no author'}/>&nbsp;
+                            ({e.year}). <strong>{e.title}</strong>.
+                            <br/>
+                            <LinkList links={links}/>
+                        </li>
+                    );
+                });
+            setJournalPublications(journalPubs);
+
+            // Compute conference publications
+            const conferencePubs = bibJSON
+                .filter(entry => entry.type === "inproceedings")
+                .map(e => {
+                    const links: { [k: string]: string } = {};
+                    if (e.doi) {
+                        links['DOI'] = `https://doi.org/${e.doi}`;
+                    }
+                    for (const l in pub_links[e.id]) {
+                        links[l] = pub_links[e.id][l]
+                    }
+                    return (
+                        <li key={e.id}>
+                            <NameList names={e.author ? e.author : 'no author'}/>&nbsp;
+                            ({e.year}). <strong>{e.title}</strong>.
+                            In {e.booktitle} (pp. {e.pages}). {e.publisher}.
+                            <br/>
+                            <LinkList links={links}/>
+                        </li>
+                    )
+                });
+            setConferencePublications(conferencePubs);
+        });
+
     }, [setConferencePublications, setJournalPublications])
 
     return (

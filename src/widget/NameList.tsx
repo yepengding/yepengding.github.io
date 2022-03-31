@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from "react";
 
-const NameList = (props: { names: string[] }) => {
+const NameList = (props: { names: string }) => {
 
     const [names, setNames] = useState<string[]>([]);
 
     useEffect(() => {
-        const names = props.names.map(n => {
+        const names = props.names.split(" and ").map(n => {
             const ns = n.split(", ")
             if (ns.length === 1) {
                 return ns[0]
@@ -18,8 +18,8 @@ const NameList = (props: { names: string[] }) => {
     return (
         <span>
             {names.map<React.ReactNode>(n => {
-                return n.startsWith("*") ? (
-                    <u key={n}>{n.substr(1)}</u>
+                return n === 'Ding, Y.' ? (
+                    <u key={n}>{n}</u>
                 ) : (
                     n
                 )

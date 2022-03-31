@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import LinkList from "../widget/LinkList";
 import NameList from "../widget/NameList";
 import {useTranslation} from "react-i18next";
+import {NoteModel} from "../model/Models";
 
 const NoteList = () => {
 
@@ -13,7 +14,7 @@ const NoteList = () => {
     useEffect(() => {
         fetch('data/notes.json')
             .then(res => res.json())
-            .then((data: any[]) => {
+            .then((data: NoteModel[]) => {
                 const notes = data.map(d => {
                     return (
                         <li key={d.title}>

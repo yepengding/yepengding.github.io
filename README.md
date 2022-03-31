@@ -52,3 +52,4 @@ export NODE_OPTIONS=--openssl-legacy-provider
 - [react-gh-pages](https://github.com/gitname/react-gh-pages)
 - [react-bulma-components](https://react-bulma.dev/)
 - [styled-components](https://styled-components.com/)
+- [bibtex-js-parser](https://github.com/yepengding/bibtex-js-parser)
