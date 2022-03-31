@@ -79,6 +79,11 @@ const PublicationList = () => {
             <Heading size={5} id="publication">
                 {t("publication")}
             </Heading>
+            <Content>
+                <strong>[<a href="https://yepengding.github.io/data/publications.bib" target="_blank"
+                            rel="noreferrer">Download BibTeX</a>]</strong>
+            </Content>
+
 
             <Heading size={5} id="conference">
                 {t("conference")}

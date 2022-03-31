@@ -29,6 +29,8 @@ const About = () => {
                 </p>
                 <p>
                     Websites:
+                    <strong>[<a href="https://github.com/yepengding" target="_blank"
+                                rel="noreferrer">GitHub</a>]</strong>
                     <strong>[<a href="https://www.linkedin.com/in/yepengding" target="_blank"
                                 rel="noreferrer">LinkedIn</a>]</strong>
                     <strong>[<a href="https://www.researchgate.net/profile/Yepeng_Ding" target="_blank"
