@@ -1,9 +1,7 @@
 [
   {
     "title": "Notes in Fundamentals of Model Checking",
-    "author": [
-      "*Ding, Yepeng"
-    ],
+    "author": "Ding, Yepeng",
     "status": "maintaining",
     "links": {
       "Webpage": "https://yepengding.github.io/ModelCheckingNotes/",

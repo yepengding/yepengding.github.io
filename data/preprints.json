@@ -1,10 +1,7 @@
 [
   {
     "title": "Transition-Oriented Programming for Developing Verifiable Software",
-    "author": [
-      "*Ding, Yepeng",
-      "Sato, Hiroyuki"
-    ],
+    "author": "Ding, Yepeng and Sato, Hiroyuki",
     "date": "2020, September",
     "doi": "arXiv preprint arXiv:2009.06029",
     "links": {
@@ -14,10 +11,7 @@
   },
   {
     "title": "Extending Concurrent Separation Logic to Enhance Modular Formalization",
-    "author": [
-      "*Ding, Yepeng",
-      "Sato, Hiroyuki"
-    ],
+    "author": "Ding, Yepeng and Sato, Hiroyuki",
     "date": "2020, July",
     "doi": "arXiv preprint arXiv:2007.13685",
     "links": {

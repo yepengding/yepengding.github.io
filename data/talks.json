@@ -1,9 +1,7 @@
 [
   {
     "title": "A Privacy-Preserving Data Sharing Framework for Public Blockchains",
-    "presenter": [
-      "*Ding, Yepeng"
-    ],
+    "presenter": "Ding, Yepeng",
     "date": "2022, January",
     "doi": "The 39th Symposium on Cryptography and Information Security (SCIS 2022)",
     "links": {
@@ -12,9 +10,7 @@
   },
   {
     "title": "Security in Blockchain Systems",
-    "presenter": [
-      "*Ding, Yepeng"
-    ],
+    "presenter": "Ding, Yepeng",
     "date": "2021, June",
     "doi": "10.13140/RG.2.2.11223.60326",
     "links": {
@@ -23,9 +19,7 @@
   },
   {
     "title": "Rethinking Decentralized System Development: from Application to Methodology",
-    "presenter": [
-      "*Ding, Yepeng"
-    ],
+    "presenter": "Ding, Yepeng",
     "date": "2020, November",
     "doi": "10.13140/RG.2.2.20254.15683",
     "links": {
