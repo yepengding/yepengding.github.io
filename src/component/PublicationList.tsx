@@ -1,16 +1,23 @@
-import {Box, Content, Heading} from 'react-bulma-components';
-import {useEffect, useState} from "react";
+import {Box, Button, Content, Heading, Modal} from 'react-bulma-components';
+import React, {useEffect, useState} from "react";
 import NameList from "../widget/NameList";
-import LinkList from "../widget/LinkList";
 import {useTranslation} from "react-i18next";
 import {BibtexParser, Entry} from "bibtex-js-parser";
+import PublicationLinkList from "../widget/PublicationLinkList";
 
 const PublicationList = () => {
 
     const {t} = useTranslation();
 
-    const [conferencePublications, setConferencePublications] = useState<any>([])
-    const [journalPublications, setJournalPublications] = useState<any>([])
+    const [conferencePublications, setConferencePublications] = useState<any>([]);
+    const [journalPublications, setJournalPublications] = useState<any>([]);
+    const [clickedPublication, setClickedPublication] = useState<Entry>();
+    const [showModal, setShowModal] = useState<boolean>(false);
+
+    const openCiteModal = (e: Entry) => {
+        setClickedPublication(e)
+        setShowModal(true);
+    }
 
     useEffect(() => {
         const fetchPublications = fetch('data/publications.bib')
@@ -29,20 +36,12 @@ const PublicationList = () => {
             const journalPubs = bibJSON
                 .filter(entry => entry.type === "article")
                 .map(e => {
-                    const links: { [k: string]: string } = {};
-                    if (e.doi) {
-                        links['DOI'] = `https://doi.org/${e.doi}`;
-                    }
-                    for (const l in pub_links[e.id]) {
-                        links[l] = pub_links[e.id][l]
-                    }
-
                     return (
                         <li key={e.id}>
                             <NameList names={e.author ? e.author : 'no author'}/>&nbsp;
                             ({e.year}). <strong>{e.title}</strong>.
                             <br/>
-                            <LinkList links={links}/>
+                            <PublicationLinkList entry={e} links={pub_links} openCiteModal={openCiteModal}/>
                         </li>
                     );
                 });
@@ -52,20 +51,14 @@ const PublicationList = () => {
             const conferencePubs = bibJSON
                 .filter(entry => entry.type === "inproceedings")
                 .map(e => {
-                    const links: { [k: string]: string } = {};
-                    if (e.doi) {
-                        links['DOI'] = `https://doi.org/${e.doi}`;
-                    }
-                    for (const l in pub_links[e.id]) {
-                        links[l] = pub_links[e.id][l]
-                    }
                     return (
                         <li key={e.id}>
                             <NameList names={e.author ? e.author : 'no author'}/>&nbsp;
                             ({e.year}). <strong>{e.title}</strong>.
                             In {e.booktitle} (pp. {e.pages}). {e.publisher}.
                             <br/>
-                            <LinkList links={links}/>
+                            <PublicationLinkList entry={e} links={pub_links} openCiteModal={openCiteModal}/>
+
                         </li>
                     )
                 });
@@ -75,35 +68,61 @@ const PublicationList = () => {
     }, [setConferencePublications, setJournalPublications])
 
     return (
-        <Box>
-            <Heading size={5} id="publication">
-                {t("publication")}
-            </Heading>
-            <Content>
-                <strong>[<a href="https://yepengding.github.io/data/publications.bib" target="_blank"
-                            rel="noreferrer">Download BibTeX</a>]</strong>
-            </Content>
+        <>
+            <Box>
+                <Heading size={5} id="publication">
+                    {t("publication")}
+                </Heading>
+                <Content>
+                    <strong>[<a href="https://yepengding.github.io/data/publications.bib" target="_blank"
+                                rel="noreferrer">Download BibTeX</a>]</strong>
+                </Content>
 
 
-            <Heading size={5} id="conference">
-                {t("conference")}
-            </Heading>
-            <Content>
-                <ul>
-                    {conferencePublications}
-                </ul>
-            </Content>
+                <Heading size={5} id="conference">
+                    {t("conference")}
+                </Heading>
+                <Content>
+                    <ul>
+                        {conferencePublications}
+                    </ul>
+                </Content>
 
-            <Heading size={5} id="journal">
-                {t("journal")}
-            </Heading>
-            <Content>
-                <ul>
-                    {journalPublications}
-                </ul>
-            </Content>
+                <Heading size={5} id="journal">
+                    {t("journal")}
+                </Heading>
+                <Content>
+                    <ul>
+                        {journalPublications}
+                    </ul>
+                </Content>
 
-        </Box>
+            </Box>
+            <div onClick={() => setShowModal(false)}>
+                <Modal
+                    onClose={() => setShowModal(false)}
+                    show={showModal}
+                >
+                    <Modal.Card onClick={(e: React.MouseEvent<HTMLInputElement>) => e.stopPropagation()}>
+                        <Modal.Card.Body>
+                            <Content>
+                                <pre>
+                                    {clickedPublication?.raw}
+                                </pre>
+                            </Content>
+                        </Modal.Card.Body>
+                        <Modal.Card.Footer justifyContent="right">
+                            <Button color="dark" onClick={
+                                () => navigator.clipboard.writeText(clickedPublication ? clickedPublication.raw : '')
+                            }>
+                                {t("copy")}
+                            </Button>
+                        </Modal.Card.Footer>
+                    </Modal.Card>
+                </Modal>
+            </div>
+
+        </>
     )
 };
 

@@ -27,4 +27,9 @@ interface ServiceModel {
     note?: string
 }
 
-export type {PreprintModel, TalkModel, NoteModel, ServiceModel}
+interface PublicationModel {
+    title: string
+    bibtex: string
+}
+
+export type {PreprintModel, TalkModel, NoteModel, ServiceModel, PublicationModel}
