@@ -39,7 +39,7 @@ const PublicationList = () => {
                     return (
                         <li key={e.id}>
                             <NameList names={e.author ? e.author : 'no author'}/>&nbsp;
-                            ({e.year}). <strong>{e.title}</strong>.
+                            ({e.year}). <strong>{e.title}</strong>. {e.journal}, {e.volume}({e.number}).
                             <br/>
                             <PublicationLinkList entry={e} links={pub_links} openCiteModal={openCiteModal}/>
                         </li>
