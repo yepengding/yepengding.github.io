@@ -1,15 +1,5 @@
 [
   {
-    "title": "Self-Sovereign Identity as a Service: Architecture in Practice",
-    "author": "Ding, Yepeng and Sato, Hiroyuki",
-    "date": "2022, May",
-    "doi": "arXiv preprint arXiv:2205.08314",
-    "links": {
-      "arXiv": "https://arxiv.org/abs/2205.08314",
-      "RG": "https://www.researchgate.net/publication/360668065_Self-Sovereign_Identity_as_a_Service_Architecture_in_Practice?_sg%5B0%5D=iGI6MVS6Q98iNHTNhOqrFWl-t3tP3b_JEy2IWrukIMbDlm15RMLaPGBhNUBGpbrMUMYarAh1bhIpv5BeGMRyuUSQjUEFZj675eVd9Mul.ZRKu9eWGPmgmqfZEQpbpouhUl9D8jgUHOX286fs_4MtBb8tJ6hHxnF3xxMCJcacri6WvfbCl5m4qNnowFK89Fg"
-    }
-  },
-  {
     "title": "Transition-Oriented Programming for Developing Verifiable Software",
     "author": "Ding, Yepeng and Sato, Hiroyuki",
     "date": "2020, September",

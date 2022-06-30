@@ -7,7 +7,7 @@ import PreprintList from "../component/PreprintList";
 import TalkList from "../component/TalkList";
 import PastWork from "../component/PastWork";
 import Education from "../component/Education";
-import Award from "../component/Award";
+import Funding from "../component/Funding";
 import Service from "../component/Service";
 import About from "../component/About";
 import Navigation from "../component/Navigation";
@@ -30,7 +30,7 @@ const Home = () => {
                 <NoteList/>
                 <PastWork/>
                 <Education/>
-                <Award/>
+                <Funding/>
                 <Service/>
                 <About/>
             </Section>

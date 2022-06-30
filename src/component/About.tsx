@@ -42,7 +42,7 @@ const About = () => {
                 </p>
 
                 About <strong><a href="https://github.com/yepengding/yepengding.github.io/tree/dev" target="_blank"
-                                 rel="noreferrer">this website</a></strong>, developed for reusable purposes.
+                                 rel="noreferrer">this website</a></strong> developed for reusable purposes.
             </Content>
 
         </Box>
