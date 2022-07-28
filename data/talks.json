@@ -1,5 +1,14 @@
 [
   {
+    "title": "Javascript Object Signing and Encryption (JOSE): Standards, Considerations, and Applications",
+    "presenter": "Ding, Yepeng",
+    "date": "2022, July",
+    "doi": "10.13140/RG.2.2.33781.86244",
+    "links": {
+      "RG": "https://www.researchgate.net/publication/362015906_Javascript_Object_Signing_and_Encryption_JOSE_Standards_Considerations_and_Applications"
+    }
+  },
+  {
     "title": "A Privacy-Preserving Data Sharing Framework for Public Blockchains",
     "presenter": "Ding, Yepeng",
     "date": "2022, January",
