@@ -22,13 +22,13 @@ yarn install
 ### Start
 
 ```shell
-npm run start
+yarn start
 ```
 
 ### Build
 
 ```shell
-npm run build
+yarn build
 ```
 
 ### OpenSSL Compatibility Issue
@@ -36,7 +36,7 @@ npm run build
 - Start with below
 
 ```shell
-npm run start_legacy
+yarn start_legacy
 ```
 
 - Deploy the project after executing below
