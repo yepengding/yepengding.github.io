@@ -5,6 +5,12 @@
 /.pnp
 .pnp.js
 
+# Yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+
 # testing
 /coverage
 

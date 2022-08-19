@@ -74,8 +74,8 @@ const PublicationList = () => {
                     {t("publication")}
                 </Heading>
                 <Content>
-                    <strong>[<a href="https://yepengding.github.io/data/publications.bib" target="_blank"
-                                rel="noreferrer">Download BibTeX</a>]</strong>
+                    <strong>[<a href="https://yepengding.github.io/data/publications.bib"
+                                rel="alternate">Download BibTeX File</a>]</strong>
                 </Content>
 
 
@@ -97,7 +97,12 @@ const PublicationList = () => {
                     </ul>
                 </Content>
 
+                <p>
+                    * Powered by <a href="https://github.com/yepengding/bibtex-js-parser"
+                       target="_blank" rel="noreferrer">bibtex-js-parser</a>.
+                </p>
             </Box>
+
             <div onClick={() => setShowModal(false)}>
                 <Modal
                     onClose={() => setShowModal(false)}
