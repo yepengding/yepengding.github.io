@@ -5,6 +5,10 @@ import {useTranslation} from "react-i18next";
 import {BibtexParser, Entry} from "bibtex-js-parser";
 import PublicationLinkList from "../widget/PublicationLinkList";
 
+const journalTypes = ["article"]
+const conferenceTypes = ["inproceedings", "incollection"];
+
+
 const PublicationList = () => {
 
     const {t} = useTranslation();
@@ -34,7 +38,7 @@ const PublicationList = () => {
 
             // Compute Journal Publications
             const journalPubs = bibJSON
-                .filter(entry => entry.type === "article")
+                .filter(entry => journalTypes.includes(entry.type))
                 .map(e => {
                     return (
                         <li key={e.id}>
@@ -49,7 +53,7 @@ const PublicationList = () => {
 
             // Compute conference publications
             const conferencePubs = bibJSON
-                .filter(entry => entry.type === "inproceedings")
+                .filter(entry => conferenceTypes.includes(entry.type))
                 .map(e => {
                     return (
                         <li key={e.id}>
@@ -99,7 +103,7 @@ const PublicationList = () => {
 
                 <p>
                     * Powered by <a href="https://github.com/yepengding/bibtex-js-parser"
-                       target="_blank" rel="noreferrer">bibtex-js-parser</a>.
+                                    target="_blank" rel="noreferrer">bibtex-js-parser</a>.
                 </p>
             </Box>
 
