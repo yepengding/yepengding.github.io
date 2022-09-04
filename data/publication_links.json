@@ -1,4 +1,7 @@
 {
+  "sato_elastic_2022": {
+    "IOS": "https://ebooks.iospress.nl/doi/10.3233/FAIA220078"
+  },
   "ding_self-sovereign_2022": {
     "RG": "https://www.researchgate.net/publication/360668065_Self-Sovereign_Identity_as_a_Service_Architecture_in_Practice"
   },
@@ -8,7 +11,7 @@
   "ding_formalism-driven_2022": {
     "RG": "https://www.researchgate.net/publication/346766832_Formalism-Driven_Development_of_Decentralized_Systems"
   },
-  "ding_sunspot_2022": {
+  "ding_sunspot_2021": {
     "RG": "https://www.researchgate.net/publication/356027261_Sunspot_A_Decentralized_Framework_Enabling_Privacy_for_Authorizable_Data_Sharing_on_Transparent_Public_Blockchains"
   },
   "ding_formalizing_2020": {
