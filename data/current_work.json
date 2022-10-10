@@ -16,16 +16,17 @@
   {
     "title": "User-Centric and Privacy-Preserving Application Based on Decentralized Techniques",
     "links": {
+      "Bloccess, 2023": "https://www.researchgate.net/publication/364241119_Bloccess_Enabling_Fine-Grained_Access_Control_Based_on_Blockchain",
       "Dagbase, 2020": "https://www.researchgate.net/publication/342313874_Dagbase_A_Decentralized_Database_Platform_Using_DAG-Based_Consensus",
-      "Derepo, 2020": "https://www.researchgate.net/publication/342313706_Derepo_A_Distributed_Privacy-Preserving_Data_Repository_with_Decentralized_Access_Control_for_Smart_Health",
-      "Bloccess, 2020": "https://www.researchgate.net/publication/342261396_Bloccess_Towards_Fine-Grained_Access_Control_Using_Blockchain_in_a_Distributed_Untrustworthy_Environment"
+      "Derepo, 2020": "https://www.researchgate.net/publication/342313706_Derepo_A_Distributed_Privacy-Preserving_Data_Repository_with_Decentralized_Access_Control_for_Smart_Health"
     }
   },
   {
-    "title": "Specification and Verification of Decentralized Systems",
+    "title": "Self-Sovereign Identity as a Service",
     "links": {
-      "FormalDS, 2020": "https://www.researchgate.net/publication/343291364_Formalizing_and_Verifying_Decentralized_Systems_with_Extended_Concurrent_Separation_Logic",
-      "ECSL, 2020": "https://www.researchgate.net/publication/343252662_Extending_Concurrent_Separation_Logic_to_Enhance_Modular_Formalization"
+      "SSIaaS, 2022": "https://www.researchgate.net/publication/360668065_Self-Sovereign_Identity_as_a_Service_Architecture_in_Practice",
+      "VDR Server": "https://github.com/yepengding/verifiable-data-registry-server",
+      "VC Service": "https://github.com/yepengding/verifiable-credential-service"
     }
   },
   {
