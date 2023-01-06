@@ -5,6 +5,9 @@ import NameList from "../widget/NameList";
 import {useTranslation} from "react-i18next";
 import {PreprintModel} from "../model/Models";
 
+/**
+ * Preprint List
+ */
 const PreprintList = () => {
 
     const {t} = useTranslation();

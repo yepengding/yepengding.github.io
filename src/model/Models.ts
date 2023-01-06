@@ -7,11 +7,11 @@ interface PreprintModel {
 }
 
 interface TalkModel {
-    doi: string,
+    info: string,
     presenter: string,
     date: string,
     title: string,
-    links: object
+    links?: object
 }
 
 interface NoteModel {

@@ -2,6 +2,9 @@ import {Navbar} from 'react-bulma-components';
 import {useState} from "react";
 import {useTranslation} from "react-i18next";
 
+/**
+ * Navigation Bar
+ */
 const Navigation = () => {
 
     const {t} = useTranslation();

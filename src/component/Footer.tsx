@@ -2,6 +2,9 @@ import {Content, Footer as BulmaFooter} from 'react-bulma-components';
 import {useState} from "react";
 import {Trans, useTranslation} from "react-i18next";
 
+/**
+ * Footer
+ */
 const Footer = () => {
 
     const {t} = useTranslation();

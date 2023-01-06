@@ -4,6 +4,9 @@ import LinkList from "../widget/LinkList";
 import NameList from "../widget/NameList";
 import {useTranslation} from "react-i18next";
 
+/**
+ * Report List
+ */
 const ReportList = () => {
 
     const {t} = useTranslation();

@@ -5,11 +5,16 @@ import {useTranslation} from "react-i18next";
 import {BibtexParser, Entry} from "bibtex-js-parser";
 import PublicationLinkList from "../widget/PublicationLinkList";
 
-const journalTypes = ["article"]
-const conferenceTypes = ["inproceedings", "incollection"];
 
-
+/**
+ * Publication List
+ */
 const PublicationList = () => {
+
+    // Identify journal type in BibTeX
+    const journalTypes = ["article"]
+    // Identify conference type in BibTeX
+    const conferenceTypes = ["inproceedings", "incollection"];
 
     const {t} = useTranslation();
 
@@ -44,7 +49,7 @@ const PublicationList = () => {
                         <li key={e.id}>
                             <NameList names={e.author ? e.author : 'no author'}/>&nbsp;
                             ({e.year}). <strong>{e.title}</strong>. {e.journal}, {e.volume}({e.number}).
-                            <br/>
+                            <br/> {e.note ? <strong>({e.note})</strong> : null}
                             <PublicationLinkList entry={e} links={pub_links} openCiteModal={openCiteModal}/>
                         </li>
                     );

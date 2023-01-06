@@ -1,6 +1,9 @@
 import {Box, Content, Heading} from 'react-bulma-components';
 import {useTranslation} from "react-i18next";
 
+/**
+ * Education Information
+ */
 const Education = () => {
 
     const {t} = useTranslation();

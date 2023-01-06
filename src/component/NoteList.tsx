@@ -5,6 +5,9 @@ import NameList from "../widget/NameList";
 import {useTranslation} from "react-i18next";
 import {NoteModel} from "../model/Models";
 
+/**
+ * Note List
+ */
 const NoteList = () => {
 
     const {t} = useTranslation();

@@ -3,6 +3,9 @@ import {useTranslation} from "react-i18next";
 import {useEffect, useState} from "react";
 import LinkList from "../widget/LinkList";
 
+/**
+ * Current Work List
+ */
 const CurrentWork = () => {
 
     const {t} = useTranslation();

@@ -1,6 +1,9 @@
 import {Box, Content, Heading} from 'react-bulma-components';
 import {useTranslation} from "react-i18next";
 
+/**
+ * Funding Information
+ */
 const Funding = () => {
 
     const {t} = useTranslation();

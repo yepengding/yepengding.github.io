@@ -2,6 +2,9 @@ import {Block, Heading, Hero} from 'react-bulma-components';
 import {useTranslation} from 'react-i18next';
 import Locale from "../widget/Locale";
 
+/**
+ * Header
+ */
 const Header = () => {
 
     const {t} = useTranslation();
