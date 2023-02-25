@@ -11,11 +11,6 @@ import PublicationLinkList from "../widget/PublicationLinkList";
  */
 const PublicationList = () => {
 
-    // Identify journal type in BibTeX
-    const journalTypes = ["article"]
-    // Identify conference type in BibTeX
-    const conferenceTypes = ["inproceedings", "incollection"];
-
     const {t} = useTranslation();
 
     const [conferencePublications, setConferencePublications] = useState<any>([]);
@@ -29,6 +24,11 @@ const PublicationList = () => {
     }
 
     useEffect(() => {
+        // Identify journal type in BibTeX
+        const journalTypes = ["article"]
+        // Identify conference type in BibTeX
+        const conferenceTypes = ["inproceedings", "incollection"];
+
         const fetchPublications = fetch('data/publications.bib')
             .then(res => res.text())
         const fetchPublicationLinks = fetch('data/publication_links.json')
@@ -48,8 +48,9 @@ const PublicationList = () => {
                     return (
                         <li key={e.id}>
                             <NameList names={e.author ? e.author : 'no author'}/>&nbsp;
-                            ({e.year}). <strong>{e.title}</strong>. {e.journal}, {e.volume}({e.number}).
-                            <br/> {e.note ? <strong>({e.note})</strong> : null}
+                            ({e.year}). <strong>{e.title}</strong>. {e.journal}, {e.volume}({e.number}). {e.note ?
+                            <strong>({e.note})</strong> : null}
+                            <br/>
                             <PublicationLinkList entry={e} links={pub_links} openCiteModal={openCiteModal}/>
                         </li>
                     );
@@ -64,7 +65,8 @@ const PublicationList = () => {
                         <li key={e.id}>
                             <NameList names={e.author ? e.author : 'no author'}/>&nbsp;
                             ({e.year}). <strong>{e.title}</strong>.
-                            In {e.booktitle} (pp. {e.pages}). {e.publisher}.
+                            In {e.booktitle} (pp. {e.pages}). {e.publisher}. {e.note ?
+                            <strong>({e.note})</strong> : null}
                             <br/>
                             <PublicationLinkList entry={e} links={pub_links} openCiteModal={openCiteModal}/>
 
