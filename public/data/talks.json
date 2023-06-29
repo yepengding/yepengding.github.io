@@ -1,5 +1,14 @@
 [
   {
+    "title": "A Gentle Introduction to Term Graph Rewriting",
+    "presenter": "Ding, Yepeng",
+    "date": "2023, April",
+    "info": "10.13140/RG.2.2.21797.47847/1",
+    "links": {
+      "RG": "https://www.researchgate.net/publication/371946786_A_Gentle_Introduction_to_Term_Graph_Rewriting"
+    }
+  },
+  {
     "title": "Javascript Object Signing and Encryption (JOSE): Standards, Considerations, and Applications",
     "presenter": "Ding, Yepeng",
     "date": "2022, July",
