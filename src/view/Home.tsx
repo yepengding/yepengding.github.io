@@ -22,6 +22,7 @@ const Home = () => {
             <Navigation/>
             <Header/>
             <Section>
+                <About/>
                 <CurrentWork/>
                 <PublicationList/>
                 <PreprintList/>
@@ -32,7 +33,6 @@ const Home = () => {
                 <Education/>
                 <Funding/>
                 <Service/>
-                <About/>
             </Section>
 
             <Footer/>

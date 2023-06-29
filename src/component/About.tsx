@@ -1,5 +1,5 @@
 import {Box, Content, Heading} from 'react-bulma-components';
-import {useTranslation} from "react-i18next";
+import {Trans, useTranslation} from "react-i18next";
 
 /**
  * My Information
@@ -15,23 +15,21 @@ const About = () => {
             </Heading>
             <Content>
                 <p>
-                    I have a great interest in <strong>decentralized technologies</strong>. Particularly, I am
-                    focusing on the security aspect of these promising technologies that is <strong>the security
-                    behind the security</strong>. Besides, I am constructing the foundational theory of a new
-                    programming paradigm named <strong>transition-oriented programming</strong> to instruct
-                    programmers to think in a formal way while developing complex systems such as decentralized
-                    systems.
+                    <strong>
+                        * <Trans i18nKey={'about_news'}/>
+                    </strong>
                 </p>
                 <p>
-                    Meanwhile, I am a system architect and a software engineer. I have supervised dozens of
-                    development projects for startups and institutes since 2015. I am still exploring the
-                    methodology of developing <strong>provably correct and verifiable software</strong>.
+                    <Trans i18nKey={'about_academia'}/>
                 </p>
                 <p>
-                    Hobbies: programming, travel, speculation
+                    <Trans i18nKey={'about_industry'}/>
                 </p>
                 <p>
-                    Websites:
+                    <Trans i18nKey={'about_hobby'}/>
+                </p>
+                <p>
+                    <Trans i18nKey={'websites'}/>
                     <strong>[<a href="https://github.com/yepengding" target="_blank"
                                 rel="noreferrer">GitHub</a>]</strong>
                     <strong>[<a href="https://www.linkedin.com/in/yepengding" target="_blank"
@@ -44,8 +42,8 @@ const About = () => {
                         Scholar</a>]</strong>
                 </p>
 
-                About <strong><a href="https://github.com/yepengding/yepengding.github.io/tree/dev" target="_blank"
-                                 rel="noreferrer">this website</a></strong> developed for reusable purposes.
+                <strong><a href="https://github.com/yepengding/yepengding.github.io/tree/dev" target="_blank"
+                           rel="noreferrer">This website</a></strong> is developed for reusable purposes.
             </Content>
 
         </Box>
