@@ -89,6 +89,20 @@ const PublicationList = () => {
                                 rel="alternate">Download BibTeX File</a>]</strong>
                 </Content>
 
+                <Content>
+                    <ul>
+                        <li>
+                            Two papers are accepted at TrustCom 2023.
+                        </li>
+                        <li>
+                            Two papers are accepted at AIBC 2023.
+                        </li>
+                        <li>
+                            One paper is accepted at ICA3PP 2023.
+                        </li>
+                    </ul>
+                </Content>
+
 
                 <Heading size={5} id="conference">
                     {t("conference")}
