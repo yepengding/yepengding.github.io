@@ -93,12 +93,41 @@ const PublicationList = () => {
                     <ul>
                         <li>
                             Two papers are accepted at TrustCom 2023.
+                            <ul>
+                                <li>
+                                    Model-Driven Security Analysis of Self-Sovereign Identity Systems
+                                </li>
+                                <li>
+                                    Inj-Kyber: Enhancing CRYSTALS-Kyber with Information Injection within a Bio-KEM Framework
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             Two papers are accepted at AIBC 2023.
+                            <ul>
+                                <li>
+                                    VeriAnon: an Anonymous, Verifiable, and Tamper-proof Commenting System Based on Ring Signature and Clustering Merkle Tree for Decentralized Trading
+                                </li>
+                                <li>
+                                    Dimension-Wise Feature Selection of Deep Learning Models for In-Air Signature Time Series Analysis
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             One paper is accepted at ICA3PP 2023.
+                            <ul>
+                                <li>
+                                    Decentralized Self-Sovereign Identity Management System: Empowering Datacenters through Compact Cancelable Template Generation
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            One paper is accepted at CIT 2023.
+                            <ul>
+                                <li>
+                                    1-D CNN-Based Online Signature Verification with Federated Learning
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </Content>
