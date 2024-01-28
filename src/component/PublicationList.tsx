@@ -92,6 +92,14 @@ const PublicationList = () => {
                 <Content>
                     <ul>
                         <li>
+                            One paper is accepted at ICSE 2024: Poster Track.
+                            <ul>
+                                <li>
+                                    Hunting DeFi Vulnerabilities via Context-Sensitive Concolic Verification
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
                             Two papers are accepted at TrustCom 2023.
                             <ul>
                                 <li>

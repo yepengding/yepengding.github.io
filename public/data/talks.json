@@ -1,5 +1,14 @@
 [
   {
+    "title": "SecureSSI: A Model-Driven Security Analysis Framework for Self-Sovereign Identity as a Service",
+    "presenter": "Ding, Yepeng and Sato, Hiroyuki",
+    "date": "2024, January",
+    "info": "The 41st Symposium on Cryptography and Information Security (SCIS 2024)",
+    "links": {
+      "SCIS": "https://www.iwsec.org/scis/2024/program.html"
+    }
+  },
+  {
     "title": "On the Smart Contract Upgradability",
     "presenter": "Ding, Yepeng",
     "date": "2023, June",
@@ -57,7 +66,10 @@
     "title": " 検証可能証明書を用いたトラストモデルの構築",
     "presenter": "五味 秀仁 and 佐藤 周行 and 大神 渉 and 白石 桃子 and 橋田 浩一 and 丁 曄澎 and 古川 善照",
     "date": "2023, January",
-    "info": "The 40th Symposium on Cryptography and Information Security (SCIS 2023)"
+    "info": "The 40th Symposium on Cryptography and Information Security (SCIS 2023)",
+    "links": {
+      "SCIS": "https://www.iwsec.org/scis/2023/SCIS_2023_program.html"
+    }
   },
   {
     "title": "公開鍵暗号に基づく認証機能を提供するマイクロサービス",

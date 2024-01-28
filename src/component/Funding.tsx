@@ -16,7 +16,10 @@ const Funding = () => {
             <Content>
                 <ul>
                     <li>
-                        <strong>{t("funding_dc1")}</strong>, DC1, JSPS
+                        <strong>{t("fund_1_name")}</strong>, {t("fund_1_institute")}
+                    </li>
+                    <li>
+                        <strong>{t("fund_2_name")}</strong>, {t("fund_2_institute")}
                     </li>
                 </ul>
             </Content>

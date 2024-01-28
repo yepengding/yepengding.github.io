@@ -3,9 +3,7 @@ import CurrentWork from "../component/CurrentWork";
 import Footer from "../component/Footer";
 import {Container, Section} from 'react-bulma-components';
 import PublicationList from "../component/PublicationList";
-import PreprintList from "../component/PreprintList";
 import TalkList from "../component/TalkList";
-import PastWork from "../component/PastWork";
 import Education from "../component/Education";
 import Funding from "../component/Funding";
 import Service from "../component/Service";
@@ -25,14 +23,14 @@ const Home = () => {
                 <About/>
                 <CurrentWork/>
                 <PublicationList/>
-                <PreprintList/>
                 <TalkList/>
-                <ReportList/>
-                <NoteList/>
-                <PastWork/>
                 <Education/>
                 <Funding/>
                 <Service/>
+                <ReportList/>
+                <NoteList/>
+                {/*<PreprintList/>*/}
+                {/*<PastWork/>*/}
             </Section>
 
             <Footer/>
