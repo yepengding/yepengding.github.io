@@ -1,5 +1,14 @@
 [
   {
+    "title": "Revisiting Security in Decentralized Autonomous Organizations: Challenges and Opportunities",
+    "presenter": "Ding, Yepeng",
+    "date": "2024, February",
+    "info": "International Two-Day Conference on Decentralized Autonomous Organizations (DAO UTokyo)",
+    "links": {
+      "UTokyo": "https://www.iii.u-tokyo.ac.jp/event/230921event"
+    }
+  },
+  {
     "title": "SecureSSI: A Model-Driven Security Analysis Framework for Self-Sovereign Identity as a Service",
     "presenter": "Ding, Yepeng and Sato, Hiroyuki",
     "date": "2024, January",
