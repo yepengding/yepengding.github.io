@@ -21,10 +21,16 @@ interface NoteModel {
     links: object
 }
 
-interface ServiceModel {
+interface ServiceItemModel {
     name: string,
-    role: string,
+    link?: string,
     note?: string
+}
+
+interface ServiceModel {
+    pc: ServiceItemModel[],
+    reviewer: ServiceItemModel[],
+    awards: ServiceItemModel[]
 }
 
 interface PublicationModel {

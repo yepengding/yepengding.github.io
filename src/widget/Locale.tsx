@@ -1,6 +1,10 @@
 import {Button, Form} from "react-bulma-components";
 import {useTranslation} from "react-i18next";
 
+/**
+ * Locale Widget
+ *
+ */
 const Locale = () => {
 
     const {i18n} = useTranslation();

@@ -3,6 +3,12 @@ import {Entry} from "bibtex-js-parser";
 import React, {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
 
+/**
+ * Publication Link List Widget
+ *
+ * @param props containing entry, links, and openCiteModal
+ * @constructor
+ */
 const PublicationLinkList = (props: { entry: Entry, links: any, openCiteModal: (e: Entry) => void }) => {
 
     const {t} = useTranslation();

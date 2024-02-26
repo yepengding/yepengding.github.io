@@ -1,4 +1,9 @@
-
+/**
+ * Link List Widget
+ *
+ * @param props
+ * @constructor
+ */
 const LinkList = (props: {links: object}) => {
 
     return (

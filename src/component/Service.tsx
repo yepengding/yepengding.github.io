@@ -8,65 +8,64 @@ import {ServiceModel} from "../model/Models";
  */
 const Service = () => {
 
-    const {t} = useTranslation();
-
-    const [journalService, setJournalService] = useState<any>([])
-    const [conferenceService, setConferenceService] = useState<any>([])
-
-    useEffect(() => {
-        const fetchJournalService = fetch('data/journal_service.json')
-            .then(res => res.json())
-        const fetchConferenceService = fetch('data/conference_service.json')
-            .then(res => res.json())
-        Promise.all([
-            fetchJournalService, fetchConferenceService
-        ]).then((data: ServiceModel[][]) => {
-            const [jData, cData] = data
-            const journalService = jData.map(d => {
-                return (
-                    <li key={d.name}>
-                        <strong>{d.name}</strong>&nbsp;
-                        {d.role}. <strong>{d.note}</strong>
-                    </li>
-                )
-            })
-            setJournalService(journalService)
-
-            const conferenceService = cData.map(d => {
-                return (
-                    <li key={d.name}>
-                        <strong>{d.name}</strong>&nbsp;
-                        {d.role}. <strong>{d.note}</strong>
-                    </li>
-                )
-            })
-            setConferenceService(conferenceService)
-
+        const {t} = useTranslation();
+        const [service, setService] = useState<any>({
+            pc: [],
+            reviewer: [],
+            awards: []
         })
-    }, [setJournalService, setConferenceService])
 
-    return (
-        <Box id="service">
-            <Heading size={5}>
-                {t("service")}
-            </Heading>
-            <Content>
-                <ul>
-                    <li><strong>Journal</strong>
-                        <ul>
-                            {journalService}
-                        </ul>
-                    </li>
-                    <li><strong>Conference</strong>
-                        <ul>
-                            {conferenceService}
-                        </ul>
-                    </li>
-                </ul>
-            </Content>
+        useEffect(() => {
+            fetch('data/service.json')
+                .then(res => res.json())
+                .then((data: ServiceModel) => {
+                    const service = {
+                        pc: data.pc
+                            .map(d => d.name)
+                            .join(", "),
+                        reviewer: data.reviewer
+                            .map(d => d.name)
+                            .join(", "),
+                        awards: data.awards.map(d => {
+                            return (
+                                <li key={d.name}>
+                                    {d.name}, <strong>{d.note}</strong>
+                                </li>
+                            )
+                        }),
+                    }
 
-        </Box>
-    )
-};
+                    setService(service)
+                })
+        }, [setService])
+
+        return (
+            <Box id="service">
+                <Heading size={5}>
+                    {t("service")}
+                </Heading>
+                <Content>
+                    <ul>
+                        <li><strong>{t("service_pc")}</strong>
+                            <p>
+                                {service.pc}
+                            </p>
+                        </li>
+                        <li><strong>{t("service_reviewer")}</strong>
+                            <p>
+                                {service.reviewer}
+                            </p>
+                        </li>
+                        <li><strong>{t("service_awards")}</strong></li>
+                        <ul>
+                            {service.awards}
+                        </ul>
+                    </ul>
+                </Content>
+
+            </Box>
+        )
+    }
+;
 
 export default Service;
