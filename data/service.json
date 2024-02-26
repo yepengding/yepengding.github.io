@@ -1,0 +1,47 @@
+{
+  "pc": [
+    {
+      "name": "IoT-AI 2024",
+      "link": "https://www.iaria.org/conferences2024/IoTAI24.html"
+    },
+    {
+      "name": "MODERN SYSTEMS 2023",
+      "link": "https://www.iaria.org/conferences2023/MODERNSYSTEMS23.html"
+    }
+  ],
+  "reviewer": [
+    {
+      "name": "IEEE TNSE",
+      "link": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488902"
+    },
+    {
+      "name": "IEEE IT Professional",
+      "link": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6294"
+    },
+    {
+      "name": "IEEE Access",
+      "link": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639"
+    },
+    {
+      "name": "Hindawi SCN",
+      "link": "https://www.hindawi.com/journals/scn/"
+    },
+    {
+      "name": "FC 2023",
+      "link": "https://fc23.ifca.ai/"
+    },
+    {
+      "name": "ICBEB 2022"
+    },
+    {
+      "name": "MMBD 2021"
+    }
+  ],
+  "awards": [
+    {
+      "name": "ICA3PP 2021",
+      "link": "http://nsclab.org/ica3pp2021/",
+      "note": "Excellent Service Award"
+    }
+  ]
+}
