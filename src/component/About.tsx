@@ -15,9 +15,7 @@ const About = () => {
             </Heading>
             <Content>
                 <p>
-                    <strong>
-                        * <Trans i18nKey={'about_news'}/>
-                    </strong>
+                    <span className="tag is-info">News</span> <Trans i18nKey={'about_news'}/>
                 </p>
                 <p>
                     <Trans i18nKey={'about_academia'}/>
@@ -37,7 +35,7 @@ const About = () => {
                     <strong>[<a href="https://www.researchgate.net/profile/Yepeng_Ding" target="_blank"
                                 rel="noreferrer">Research
                         Gate</a>]</strong>
-                    <strong>[<a href="https://scholar.google.com/citations?user=idwQ-d4AAAAJ" target="_blank"
+                    <strong>[<a href="https://scholar.google.com/citations?user=QNrHl5EAAAAJ" target="_blank"
                                 rel="noreferrer">Google
                         Scholar</a>]</strong>
                 </p>

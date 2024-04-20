@@ -3,9 +3,9 @@
   "firstname_phonetic": "Michael",
   "lastname": "Ding",
   "lastname_phonetic": "Ding",
-  "research_interest": "Research Interests: Software Engineering, Information Security, Distributed Computing",
+  "research_interest": "Research Interests: Decentralized Computing, Information Security, Software Engineering",
   "about": "About",
-  "about_news": "I am seeking job opportunities starting from April 2024 in academia and industry. I am also open to startup ideas and business collaboration. Please feel free to contact me if you have any interest.",
+  "about_news": "I have been an <strong>assistant professor</strong> at both the <strong>Information Media Center and Graduate School of Advanced Science and Engineering, Hiroshima University </strong>, since April 2024. I am open to academic and industrial collaborations. Please feel free to contact me if you have any interest.",
   "about_academia": "I am passionate about constructing <strong>provably correct systems</strong> by discovering theories <strong>from practice</strong> and developing methodologies <strong>for practice</strong>. My primary focus centers around the <strong>security and privacy</strong> aspects of <strong>software engineering</strong>, particularly <strong>decentralized systems</strong> spanning protocol and application levels. Currently, I am constructing <strong>transition-oriented programming</strong>, a new programming paradigm to facilitate developing provably correct systems.",
   "about_industry": "Meanwhile, I am a <strong>system architect</strong> certified by the Chinese, Japanese, and Korean governments. I have directed dozens of development projects for startups and institutes since 2015. Besides, I am actively exploring the best current practice of developing robust, secure, and efficient systems with minimum cost.",
   "about_hobby": "Hobbies: programming, travel, film",
@@ -54,5 +54,5 @@
   "contact": "Contact",
   "email": "Email",
   "email_tip": "Please point here",
-  "address": "Information Technology Center<br/>The University of Tokyo<br/>2-11-16 Yayoi, Bunkyo-ku, Tokyo, 113-8658, Japan"
+  "address": "Information Media Center (Main Building)<br/>Hiroshima University<br/>1-4-2 Kagamiyama, Higashihiroshima, Hiroshima, 739-8511, Japan"
 }
