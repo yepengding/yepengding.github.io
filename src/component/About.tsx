@@ -15,19 +15,19 @@ const About = () => {
             </Heading>
             <Content>
                 <p>
-                    <span className="tag is-info">News</span> <Trans i18nKey={'about_news'}/>
+                    <Trans i18nKey={'about_news'}><span className="tag is-info"></span></Trans>
                 </p>
                 <p>
-                    <Trans i18nKey={'about_academia'}/>
+                    <Trans i18nKey={'about_general'}/>
                 </p>
                 <p>
-                    <Trans i18nKey={'about_industry'}/>
+                    <Trans i18nKey={'about_bio'}><span className="tag is-info is-light"></span></Trans>
                 </p>
                 <p>
-                    <Trans i18nKey={'about_hobby'}/>
+                    <Trans i18nKey={'about_hobby'}><span className="tag is-info is-light"></span></Trans>
                 </p>
                 <p>
-                    <Trans i18nKey={'websites'}/>
+                <span className="tag is-info is-light"><Trans i18nKey={'websites'}/></span>&nbsp;
                     <strong>[<a href="https://github.com/yepengding" target="_blank"
                                 rel="noreferrer">GitHub</a>]</strong>
                     <strong>[<a href="https://www.linkedin.com/in/yepengding" target="_blank"
@@ -38,6 +38,8 @@ const About = () => {
                     <strong>[<a href="https://scholar.google.com/citations?user=QNrHl5EAAAAJ" target="_blank"
                                 rel="noreferrer">Google
                         Scholar</a>]</strong>
+                    <strong>[<a href="https://researchmap.jp/ypding" target="_blank"
+                                rel="noreferrer">researchmap</a>]</strong>
                 </p>
 
                 <strong><a href="https://github.com/yepengding/yepengding.github.io/tree/dev" target="_blank"
