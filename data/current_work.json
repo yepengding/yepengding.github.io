@@ -1,20 +1,25 @@
 [
   {
+    "title": "Vulnerability Analysis of Decentralized Applications",
+    "links": {
+      "CSCV, 2024": "https://arxiv.org/abs/2404.10376"
+    }
+  },
+  {
     "title": "Transition-Oriented Programming",
     "links": {
-      "TOP, 2024": "https://arxiv.org/abs/2009.06029"
+      "TOP, 2024": "https://www.researchgate.net/publication/378659115_Transition-Oriented_Programming_Developing_Provably_Correct_Systems"
     }
   },
   {
-    "title": "Seniz: A Modeling Language for Formalism-Driven Development ",
+    "title": "Advancing Self-Sovereign Identity",
     "links": {
-      "FDD Concepts, 2022": "https://www.mdpi.com/2076-3417/12/7/3415",
-      "FDD, 2022": "https://www.researchgate.net/publication/346766832_Formalism-Driven_Development_of_Decentralized_Systems",
-      "GitHub": "https://github.com/yepengding/Seniz"
+      "DeAggregation, 2022": "https://www.researchgate.net/publication/369413765_Leveraging_Self-Sovereign_Identity_in_Decentralized_Data_Aggregation",
+      "SSIaaS, 2022": "https://www.researchgate.net/publication/360668065_Self-Sovereign_Identity_as_a_Service_Architecture_in_Practice"
     }
   },
   {
-    "title": "User-Centric and Privacy-Preserving Application Based on Decentralized Techniques",
+    "title": "Decentralized Security Infrastructures",
     "links": {
       "Bloccess, 2023": "https://www.researchgate.net/publication/364241119_Bloccess_Enabling_Fine-Grained_Access_Control_Based_on_Blockchain",
       "Dagbase, 2020": "https://www.researchgate.net/publication/342313874_Dagbase_A_Decentralized_Database_Platform_Using_DAG-Based_Consensus",
@@ -22,19 +27,10 @@
     }
   },
   {
-    "title": "Self-Sovereign Identity as a Service",
-    "links": {
-      "SSIaaS, 2022": "https://www.researchgate.net/publication/360668065_Self-Sovereign_Identity_as_a_Service_Architecture_in_Practice",
-      "VDR Server": "https://github.com/yepengding/verifiable-data-registry-server",
-      "VC Service": "https://github.com/yepengding/verifiable-credential-service"
-    }
-  },
-  {
-    "title": "MyPub: A Decentralized Privacy-Preserving Publishing Platform",
+    "title": "Privacy-Preserving Data Sharing over Decentralized Networks",
     "links": {
       "Sunspot, 2021": "https://www.researchgate.net/publication/356027261_Sunspot_A_Decentralized_Framework_Enabling_Privacy_for_Authorizable_Data_Sharing_on_Transparent_Public_Blockchains",
-      "GitHub": "https://github.com/yepengding/MyPub",
-      "Slide": "https://github.com/yepengding/MyPub/blob/main/doc/talk/MyPub-en.pdf"
+      "MyPub, 2021": "https://github.com/yepengding/MyPub"
     }
   }
 ]
