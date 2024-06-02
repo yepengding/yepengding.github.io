@@ -99,34 +99,6 @@ const PublicationList = () => {
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            One paper is accepted at ICSE 2024: Poster Track.
-                            <ul>
-                                <li>
-                                    Hunting DeFi Vulnerabilities via Context-Sensitive Concolic Verification
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            Two papers are accepted at TrustCom 2023.
-                            <ul>
-                                <li>
-                                    Model-Driven Security Analysis of Self-Sovereign Identity Systems
-                                </li>
-                                <li>
-                                    Inj-Kyber: Enhancing CRYSTALS-Kyber with Information Injection within a Bio-KEM
-                                    Framework
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            One paper is accepted at CIT 2023.
-                            <ul>
-                                <li>
-                                    1-D CNN-Based Online Signature Verification with Federated Learning
-                                </li>
-                            </ul>
-                        </li>
                     </ul>
                 </Content>
 

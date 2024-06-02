@@ -14,6 +14,12 @@ interface TalkModel {
     links?: object
 }
 
+interface CourseModel {
+    title: string,
+    year: string,
+    links: object
+}
+
 interface NoteModel {
     title: string,
     status: string,
@@ -38,4 +44,4 @@ interface PublicationModel {
     bibtex: string
 }
 
-export type {PreprintModel, TalkModel, NoteModel, ServiceModel, PublicationModel}
+export type {PreprintModel, TalkModel, NoteModel, ServiceModel, CourseModel, PublicationModel}

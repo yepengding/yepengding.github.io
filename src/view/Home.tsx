@@ -11,6 +11,8 @@ import About from "../component/About";
 import Navigation from "../component/Navigation";
 import ReportList from "../component/ReportList";
 import NoteList from "../component/NoteList";
+import CourseList from "../component/CourseList";
+import PatentList from "../component/PatentList";
 
 const Home = () => {
 
@@ -24,9 +26,11 @@ const Home = () => {
                 <CurrentWork/>
                 <PublicationList/>
                 <TalkList/>
-                <Education/>
-                <Funding/>
                 <Service/>
+                <Funding/>
+                <Education/>
+                <CourseList/>
+                <PatentList/>
                 <ReportList/>
                 <NoteList/>
                 {/*<PreprintList/>*/}

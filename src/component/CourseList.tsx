@@ -1,45 +1,43 @@
 import {Box, Content, Heading} from 'react-bulma-components';
 import {useEffect, useState} from "react";
 import LinkList from "../widget/LinkList";
-import NameList from "../widget/NameList";
 import {useTranslation} from "react-i18next";
-import {NoteModel} from "../model/Models";
+import {CourseModel} from "../model/Models";
 
 /**
- * Note List
+ * Course List
  */
-const NoteList = () => {
+const CourseList = () => {
 
     const {t} = useTranslation();
 
-    const [notes, setNotes] = useState<any>([])
+    const [courses, setCourses] = useState<any>([])
 
     useEffect(() => {
-        fetch('data/notes.json')
+        fetch('data/courses.json')
             .then(res => res.json())
-            .then((data: NoteModel[]) => {
+            .then((data: CourseModel[]) => {
                 const notes = data.map(d => {
                     return (
-                        <li key={d.title}>
-                            <strong>{d.title}</strong> ({d.status})
-                            by <NameList names={d.author}/>.
+                        <li key={d.title + d.year}>
+                            <strong>{d.title}</strong> ({d.year})
                             <br/>
                             <LinkList links={d.links}/>
                         </li>
                     )
                 })
-                setNotes(notes)
+                setCourses(notes)
             })
-    }, [setNotes])
+    }, [setCourses])
 
     return (
-        <Box id="note">
+        <Box id="course">
             <Heading size={5}>
-                {t("note")}
+                {t("course")}
             </Heading>
             <Content>
                 <ul>
-                    {notes}
+                    {courses}
                 </ul>
             </Content>
 
@@ -47,4 +45,4 @@ const NoteList = () => {
     )
 };
 
-export default NoteList;
+export default CourseList;

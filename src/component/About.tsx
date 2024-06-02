@@ -1,5 +1,7 @@
 import {Box, Content, Heading} from 'react-bulma-components';
 import {Trans, useTranslation} from "react-i18next";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faGithub, faGoogleScholar, faLinkedin, faResearchgate} from '@fortawesome/free-brands-svg-icons'
 
 /**
  * My Information
@@ -27,19 +29,42 @@ const About = () => {
                     <Trans i18nKey={'about_hobby'}><span className="tag is-info is-light"></span></Trans>
                 </p>
                 <p>
-                <span className="tag is-info is-light"><Trans i18nKey={'websites'}/></span>&nbsp;
-                    <strong>[<a href="https://github.com/yepengding" target="_blank"
-                                rel="noreferrer">GitHub</a>]</strong>
-                    <strong>[<a href="https://www.linkedin.com/in/yepengding" target="_blank"
-                                rel="noreferrer">LinkedIn</a>]</strong>
-                    <strong>[<a href="https://www.researchgate.net/profile/Yepeng_Ding" target="_blank"
-                                rel="noreferrer">Research
-                        Gate</a>]</strong>
-                    <strong>[<a href="https://scholar.google.com/citations?user=QNrHl5EAAAAJ" target="_blank"
-                                rel="noreferrer">Google
-                        Scholar</a>]</strong>
-                    <strong>[<a href="https://researchmap.jp/ypding" target="_blank"
-                                rel="noreferrer">researchmap</a>]</strong>
+                    <a className="button is-text" href="https://scholar.google.com/citations?user=QNrHl5EAAAAJ"
+                       target="_blank" rel="noreferrer">
+                        <span className="icon">
+                          <FontAwesomeIcon icon={faGoogleScholar}/>
+                        </span>
+                        <span>Google Scholar</span>
+                    </a>
+
+                    <a className="button is-text" href="https://github.com/yepengding"
+                       target="_blank" rel="noreferrer">
+                        <span className="icon">
+                          <FontAwesomeIcon icon={faGithub}/>
+                        </span>
+                        <span>GitHub</span>
+                    </a>
+
+                    <a className="button is-text" href="https://www.linkedin.com/in/yepengding"
+                       target="_blank" rel="noreferrer">
+                        <span className="icon">
+                          <FontAwesomeIcon icon={faLinkedin}/>
+                        </span>
+                        <span>LinkedIn</span>
+                    </a>
+
+                    <a className="button is-text" href="https://www.researchgate.net/profile/Yepeng_Ding"
+                       target="_blank" rel="noreferrer">
+                        <span className="icon">
+                          <FontAwesomeIcon icon={faResearchgate}/>
+                        </span>
+                        <span>ResearchGate</span>
+                    </a>
+
+                    <a className="button is-text" href="https://researchmap.jp/ypding"
+                       target="_blank" rel="noreferrer">
+                        <span>researchmap</span>
+                    </a>
                 </p>
 
                 <strong><a href="https://github.com/yepengding/yepengding.github.io/tree/dev" target="_blank"
