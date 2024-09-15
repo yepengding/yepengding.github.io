@@ -1,6 +1,5 @@
 import {Box, Content, Heading} from 'react-bulma-components';
 import {useEffect, useState} from "react";
-import LinkList from "../widget/LinkList";
 import {useTranslation} from "react-i18next";
 import {CourseModel} from "../model/Models";
 
@@ -19,10 +18,8 @@ const CourseList = () => {
             .then((data: CourseModel[]) => {
                 const notes = data.map(d => {
                     return (
-                        <li key={d.title + d.year}>
-                            <strong>{d.title}</strong> ({d.year})
-                            <br/>
-                            <LinkList links={d.links}/>
+                        <li key={d.title}>
+                            <strong>{d.title}</strong> ({d.years})
                         </li>
                     )
                 })

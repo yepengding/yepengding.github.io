@@ -16,8 +16,7 @@ interface TalkModel {
 
 interface CourseModel {
     title: string,
-    year: string,
-    links: object
+    years: string,
 }
 
 interface NoteModel {

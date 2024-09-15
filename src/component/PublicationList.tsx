@@ -97,6 +97,13 @@ const PublicationList = () => {
                                 </li>
                             </ul>
                         </li>
+                        <li>One paper is accepted at IEEE ACCESS
+                            <ul>
+                                <li>Hand Gesture Classification Using sEMG Signals: Nearest-Centroid-Based Methodology
+                                    with DBA
+                                </li>
+                            </ul>
+                        </li>
                         <li>One paper is accepted at ICA3PP 2024
                             <ul>
                                 <li>On-Chain Dynamic Policy Evaluation for Decentralized Access Control
@@ -105,15 +112,14 @@ const PublicationList = () => {
                         </li>
                         <li>One paper is accepted at ISPA 2024
                             <ul>
-                                <li>Hand Gesture Classification Using Nearest Centroid With Soft-DTW Loss on sEMG Signals
+                                <li>Hand Gesture Classification Using Nearest Centroid With Soft-DTW Loss on sEMG
+                                    Signals
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            One paper is accepted at COMPSAC 2024
+                        <li>One paper is accepted at CCCI 2024
                             <ul>
-                                <li>
-                                    Textual Differential Privacy for Context-Aware Reasoning with Large Language Model
+                                <li>Emer: Reputation-Based Event Consumer for Event-Driven Decentralized Systems
                                 </li>
                             </ul>
                         </li>
