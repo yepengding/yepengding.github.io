@@ -97,13 +97,6 @@ const PublicationList = () => {
                                 </li>
                             </ul>
                         </li>
-                        <li>One paper is accepted at IEEE ACCESS
-                            <ul>
-                                <li>Hand Gesture Classification Using sEMG Signals: Nearest-Centroid-Based Methodology
-                                    with DBA
-                                </li>
-                            </ul>
-                        </li>
                         <li>One paper is accepted at ICA3PP 2024
                             <ul>
                                 <li>On-Chain Dynamic Policy Evaluation for Decentralized Access Control

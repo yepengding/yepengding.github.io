@@ -16,9 +16,9 @@ const About = () => {
                 {t('about')}
             </Heading>
             <Content>
-                {/*<p>*/}
-                {/*    <Trans i18nKey={'about_news'}><span className="tag is-info"></span></Trans>*/}
-                {/*</p>*/}
+                <p>
+                    <Trans i18nKey={'about_news'}><span className="tag is-info"></span></Trans>
+                </p>
                 <p>
                     <Trans i18nKey={'about_bio'}><span className="tag is-info is-light"></span></Trans>
                 </p>
