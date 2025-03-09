@@ -33,9 +33,8 @@ interface ServiceItemModel {
 }
 
 interface ServiceModel {
+    editor: ServiceItemModel[],
     pc: ServiceItemModel[],
-    reviewer: ServiceItemModel[],
-    awards: ServiceItemModel[]
 }
 
 interface PublicationModel {

@@ -10,9 +10,8 @@ const Service = () => {
 
         const {t} = useTranslation();
         const [service, setService] = useState<any>({
-            pc: [],
-            reviewer: [],
-            awards: []
+            editor: [],
+            pc: []
         })
 
         useEffect(() => {
@@ -20,21 +19,19 @@ const Service = () => {
                 .then(res => res.json())
                 .then((data: ServiceModel) => {
                     const service = {
-                        pc: data.pc
-                            .map(d => d.name)
-                            .join(", "),
-                        reviewer: data.reviewer
-                            .map(d => d.name)
-                            .join(", "),
-                        awards: data.awards.map(d => {
-                            return (
+                        editor: data.editor
+                            .map(d => (
                                 <li key={d.name}>
-                                    {d.name}, <strong>{d.note}</strong>
+                                    <a href={d.link} target="_blank" rel="noreferrer">{d.name}</a>&nbsp;
                                 </li>
-                            )
-                        }),
+                            )),
+                        pc: data.pc
+                            .map(d => (
+                                <li key={d.name}>
+                                    <a href={d.link} target="_blank" rel="noreferrer">{d.name}</a>&nbsp;
+                                </li>
+                            )),
                     }
-
                     setService(service)
                 })
         }, [setService])
@@ -46,23 +43,14 @@ const Service = () => {
                 </Heading>
                 <Content>
                     <ul>
-                        <li><strong>{t("service_pc")}</strong>
-                            <p>
-                                {service.pc}
-                            </p>
-                        </li>
-                        <li><strong>{t("service_reviewer")}</strong>
-                            <p>
-                                {service.reviewer}
-                            </p>
-                        </li>
-                        <li><strong>{t("service_awards")}</strong></li>
-                        <ul>
-                            {service.awards}
-                        </ul>
+                        <strong>{t("service_editor")}</strong>
+                        {service.editor}
+                    </ul>
+                    <ul>
+                        <strong>{t("service_pc")}</strong>
+                        {service.pc}
                     </ul>
                 </Content>
-
             </Box>
         )
     }

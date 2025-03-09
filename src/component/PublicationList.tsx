@@ -91,34 +91,14 @@ const PublicationList = () => {
 
                 <Content>
                     <ul>
-                        <li>One paper is accepted at IEEE TNSM
+                        <li>One paper is accepted at ICAPS 2025
                             <ul>
-                                <li>Data Aggregation Management with Self-Sovereign Identity in Decentralized Networks
-                                </li>
-                            </ul>
-                        </li>
-                        <li>One paper is accepted at ICA3PP 2024
-                            <ul>
-                                <li>On-Chain Dynamic Policy Evaluation for Decentralized Access Control
-                                </li>
-                            </ul>
-                        </li>
-                        <li>One paper is accepted at ISPA 2024
-                            <ul>
-                                <li>Hand Gesture Classification Using Nearest Centroid With Soft-DTW Loss on sEMG
-                                    Signals
-                                </li>
-                            </ul>
-                        </li>
-                        <li>One paper is accepted at CCCI 2024
-                            <ul>
-                                <li>Emer: Reputation-Based Event Consumer for Event-Driven Decentralized Systems
+                                <li>DynTaskMAS: A Dynamic Task Graph-driven Framework for Asynchronous and Parallel LLM-based Multi-Agent Systems
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </Content>
-
 
                 <Heading size={5} id="conference">
                     {t("conference")}
