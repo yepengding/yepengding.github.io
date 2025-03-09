@@ -14,7 +14,7 @@
   {
     "title": "Advancing Self-Sovereign Identity",
     "links": {
-      "DeAggregation, 2022": "https://www.researchgate.net/publication/369413765_Leveraging_Self-Sovereign_Identity_in_Decentralized_Data_Aggregation",
+      "Degator, 2024": "https://www.researchgate.net/publication/383556165_Data_Aggregation_Management_With_Self-Sovereign_Identity_in_Decentralized_Networks",
       "SSIaaS, 2022": "https://www.researchgate.net/publication/360668065_Self-Sovereign_Identity_as_a_Service_Architecture_in_Practice"
     }
   },
@@ -22,8 +22,7 @@
     "title": "Decentralized Security Infrastructures",
     "links": {
       "Bloccess, 2023": "https://www.researchgate.net/publication/364241119_Bloccess_Enabling_Fine-Grained_Access_Control_Based_on_Blockchain",
-      "Dagbase, 2020": "https://www.researchgate.net/publication/342313874_Dagbase_A_Decentralized_Database_Platform_Using_DAG-Based_Consensus",
-      "Derepo, 2020": "https://www.researchgate.net/publication/342313706_Derepo_A_Distributed_Privacy-Preserving_Data_Repository_with_Decentralized_Access_Control_for_Smart_Health"
+      "Dagbase, 2020": "https://www.researchgate.net/publication/342313874_Dagbase_A_Decentralized_Database_Platform_Using_DAG-Based_Consensus"
     }
   },
   {
