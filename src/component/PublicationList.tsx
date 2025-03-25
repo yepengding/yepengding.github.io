@@ -93,10 +93,17 @@ const PublicationList = () => {
                     <ul>
                         <li>One paper is accepted at ICAPS 2025
                             <ul>
-                                <li>DynTaskMAS: A Dynamic Task Graph-driven Framework for Asynchronous and Parallel LLM-based Multi-Agent Systems
+                                <li>DynTaskMAS: A Dynamic Task Graph-driven Framework for Asynchronous and Parallel
+                                    LLM-based Multi-Agent Systems
                                 </li>
                             </ul>
                         </li>
+                        <li>One paper is accepted at ICME 2025</li>
+                        <ul>
+                            <li>Spectrum-Adaptive Distribution of 2D Gaussians for Image Representation and
+                                Compression
+                            </li>
+                        </ul>
                     </ul>
                 </Content>
 
