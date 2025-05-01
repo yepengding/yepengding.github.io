@@ -26,10 +26,9 @@
     }
   },
   {
-    "title": "Privacy-Preserving Data Sharing over Decentralized Networks",
+    "title": "High-Performance Quantitative Trading Infrastructures",
     "links": {
-      "Sunspot, 2021": "https://www.researchgate.net/publication/356027261_Sunspot_A_Decentralized_Framework_Enabling_Privacy_for_Authorizable_Data_Sharing_on_Transparent_Public_Blockchains",
-      "MyPub, 2021": "https://github.com/yepengding/MyPub"
+      "Quantstorm, 2025": "https://github.com/yepengding/quantstorm"
     }
   }
 ]
