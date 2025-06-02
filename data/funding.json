@@ -1,0 +1,17 @@
+[
+  {
+    "id": "fund_early",
+    "name": "Grant-in-Aid for Early-Career Scientists",
+    "funder": "Japan Society for the Promotion of Science"
+  },
+  {
+    "id": "fund_ethz",
+    "name": "Young Researchers' Exchange Grant",
+    "funder": "ETH Zurich"
+  },
+  {
+    "id": "fund_dc1",
+    "name": "Research Fellowship for Young Scientists (Grant-in-Aid for JSPS Fellows), DC1",
+    "funder": "Japan Society for the Promotion of Science"
+  }
+]
