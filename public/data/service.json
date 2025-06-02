@@ -7,12 +7,16 @@
   ],
   "pc": [
     {
-      "name": "CAI 2025",
-      "link": "https://cai.ieee.org/2025/"
+      "name": "AVSS 2025"
     },
     {
-      "name": "CANDAR 2024",
-      "link": "https://is-candar.org/"
+      "name": "BCK 2025"
+    },
+    {
+      "name": "CAI 2025"
+    },
+    {
+      "name": "CANDAR 2025, 2024"
     }
   ]
 }

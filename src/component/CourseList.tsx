@@ -16,14 +16,14 @@ const CourseList = () => {
         fetch('data/courses.json')
             .then(res => res.json())
             .then((data: CourseModel[]) => {
-                const notes = data.map(d => {
+                const courses = data.map(d => {
                     return (
-                        <li key={d.title}>
-                            <strong>{d.title}</strong> ({d.years})
+                        <li key={d.id}>
+                            <strong>{d.name}</strong> ({d.years})
                         </li>
                     )
                 })
-                setCourses(notes)
+                setCourses(courses)
             })
     }, [setCourses])
 

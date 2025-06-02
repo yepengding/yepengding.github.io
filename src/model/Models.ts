@@ -15,7 +15,8 @@ interface TalkModel {
 }
 
 interface CourseModel {
-    title: string,
+    id: string,
+    name: string,
     years: string,
 }
 
@@ -37,9 +38,15 @@ interface ServiceModel {
     pc: ServiceItemModel[],
 }
 
+interface FundingItemModel {
+    id: string,
+    name: string,
+    funder: string
+}
+
 interface PublicationModel {
     title: string
     bibtex: string
 }
 
-export type {PreprintModel, TalkModel, NoteModel, ServiceModel, CourseModel, PublicationModel}
+export type {PreprintModel, TalkModel, NoteModel, ServiceModel, FundingItemModel, CourseModel, PublicationModel}

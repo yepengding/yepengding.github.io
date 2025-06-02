@@ -1,26 +1,42 @@
 [
   {
-    "title": "Introduction to Information and Data Sciences",
-    "years": "2024"
+    "id": "WSN21501",
+    "name": "Information Systems",
+    "years": "2025"
   },
   {
-    "title": "Informatics Seminar I",
-    "years": "2024"
+    "id": "WSN00123,WSN00147,WSN00151,WSN00155,WSN00223,WSN00247",
+    "name": "Special Study on Informatics and Data Science A, B",
+    "years": "2024, 2025"
   },
   {
-    "title": "Informatics Seminar II",
-    "years": "2024"
+    "id": "KA238001",
+    "name": "Informatics and Data Science Exercise IV",
+    "years": "2024, 2025"
   },
   {
-    "title": "Graduation Thesis",
-    "years": "2024"
+    "id": "KA000001",
+    "name": "Introductory Seminar for First-Year Students",
+    "years": "2025"
   },
   {
-    "title": "Special Exercises on Informatics and Data Science A",
-    "years": "2024"
+    "id": "KA307001,KA308001",
+    "name": "Computer Science Seminar I, II",
+    "years": "2025"
   },
   {
-    "title": "Special Study on Informatics and Data Science",
+    "id": "KA401001",
+    "name": "Graduation Thesis",
+    "years": "2024, 2025"
+  },
+  {
+    "id": "30040004",
+    "name": "Introduction to Information and Data Sciences",
+    "years": "2024, 2025"
+  },
+  {
+    "id": "KA303001,KA304001",
+    "name": "Informatics Seminar I, II",
     "years": "2024"
   }
 ]
