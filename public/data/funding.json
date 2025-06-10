@@ -5,6 +5,11 @@
     "funder": "Japan Society for the Promotion of Science"
   },
   {
+    "id": "fund_c_2025",
+    "name": "Grant-in-Aid for Scientific Research (C)",
+    "funder": "Japan Society for the Promotion of Science"
+  },
+  {
     "id": "fund_ethz",
     "name": "Young Researchers' Exchange Grant",
     "funder": "ETH Zurich"
