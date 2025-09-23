@@ -98,12 +98,19 @@ const PublicationList = () => {
                                 </li>
                             </ul>
                         </li>
-                        <li>One paper is accepted at ICME 2025</li>
-                        <ul>
-                            <li>Spectrum-Adaptive Distribution of 2D Gaussians for Image Representation and
-                                Compression
-                            </li>
-                        </ul>
+                        <li>One paper is accepted at ICME 2025
+                            <ul>
+                                <li>Spectrum-Adaptive Distribution of 2D Gaussians for Image Representation and
+                                    Compression
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Two papers are accepted at PRICAI 2025
+                            <ul>
+                                <li>SegEraser: Augmentation with Linear Segmentation and Contextual Erasing for sEMG Gesture Classification</li>
+                                <li>Dynamic-Segment-Masking Pre-Training for Multivariate Time-Series Classification</li>
+                            </ul>
+                        </li>
                     </ul>
                 </Content>
 

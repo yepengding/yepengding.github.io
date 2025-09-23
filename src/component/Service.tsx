@@ -25,16 +25,7 @@ const Service = () => {
                                     <a href={d.link} target="_blank" rel="noreferrer">{d.name}</a>&nbsp;
                                 </li>
                             )),
-                        pc: data.pc
-                            .map(d => (
-                                !!d.link ?
-                                    <li key={d.name}>
-                                        <a href={d.link} target="_blank" rel="noreferrer">{d.name}</a>&nbsp;
-                                    </li> :
-                                    <li key={d.name}>
-                                        {d.name}&nbsp;
-                                    </li>
-                            )),
+                        pc: <p>{data.pc.map(d => d.name).join(", ")}</p>,
                     }
                     setService(service)
                 })
