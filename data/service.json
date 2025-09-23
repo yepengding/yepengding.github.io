@@ -7,16 +7,22 @@
   ],
   "pc": [
     {
-      "name": "AVSS 2025"
+      "name": "ISPA (2025)"
     },
     {
-      "name": "BCK 2025"
+      "name": "PRICAI (2025)"
     },
     {
-      "name": "CAI 2025"
+      "name": "AVSS (2025)"
     },
     {
-      "name": "CANDAR 2025, 2024"
+      "name": "BCK (2025)"
+    },
+    {
+      "name": "CAI (2025)"
+    },
+    {
+      "name": "CANDAR (2025, 2024)"
     }
   ]
 }

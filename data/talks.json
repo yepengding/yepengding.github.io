@@ -1,9 +1,21 @@
 [
   {
+    "title": "Agent Orchestration with Transition Systems",
+    "presenter": "Ding, Yepeng and Twabi, Ahmed and Kondo, Tohru",
+    "date": "2025, June",
+    "info": "Consen 2025",
+    "links": {
+      "IEICE": "https://ken.ieice.org/ken/paper/20250614RckN/eng/"
+    }
+  },
+  {
     "title": "Decentralized Multi-Source Retrieval-Augmented Generation",
     "presenter": "Yu, Junwei and 丁 曄澎 and 佐藤 周行",
     "date": "2025, March",
-    "info": "第219回SE研究発表会"
+    "info": "第219回SE研究発表会",
+    "links": {
+      "IPSJ": "https://ipsj.ixsq.nii.ac.jp/records/2000563"
+    }
   },
   {
     "title": "Revisiting Security in Decentralized Autonomous Organizations: Challenges and Opportunities",
