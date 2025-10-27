@@ -111,6 +111,13 @@ const PublicationList = () => {
                                 <li>Dynamic-Segment-Masking Pre-Training for Multivariate Time-Series Classification</li>
                             </ul>
                         </li>
+                        <li>One paper won the <strong>Best Paper Award</strong> at ISPA 2025
+                            <ul>
+                                <li>
+                                    Decentralized Multi-Agent System with Trust-Aware Communication
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </Content>
 
