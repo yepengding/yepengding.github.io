@@ -105,6 +105,11 @@ const PublicationList = () => {
                                 </li>
                             </ul>
                         </li>
+                        <li>One paper is accepted at ACM Multimedia Asia 2025
+                            <ul>
+                                <li>Joint Optimization for Image Compression and Deblurring via Blur-Aware Guidance</li>
+                            </ul>
+                        </li>
                         <li>Two papers are accepted at PRICAI 2025
                             <ul>
                                 <li>SegEraser: Augmentation with Linear Segmentation and Contextual Erasing for sEMG Gesture Classification</li>
