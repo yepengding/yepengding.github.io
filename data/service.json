@@ -1,28 +1,35 @@
 {
   "editor": [
     {
+      "name": "Advances in Decentralized Systems: Algorithms, Security, and Applications",
+      "link": "https://www.mdpi.com/journal/electronics/special_issues/QZM637E4U2"
+    },
+    {
       "name": "Advances in Decentralized Intelligence",
       "link": "https://www.mdpi.com/journal/electronics/special_issues/6IK1JNL0CC"
     }
   ],
   "pc": [
     {
+      "name": "ACM MM (2026)"
+    },
+    {
+      "name": "PRICAI (2026, 2025)"
+    },
+    {
+      "name": "CANDAR (2026, 2025, 2024)"
+    },
+    {
       "name": "ISPA (2025)"
     },
     {
-      "name": "PRICAI (2025)"
-    },
-    {
-      "name": "AVSS (2025)"
+      "name": "AVSS (2026, 2025)"
     },
     {
       "name": "BCK (2025)"
     },
     {
       "name": "CAI (2025)"
-    },
-    {
-      "name": "CANDAR (2025, 2024)"
     }
   ]
 }
