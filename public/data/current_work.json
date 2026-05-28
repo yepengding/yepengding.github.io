@@ -1,5 +1,11 @@
 [
   {
+    "title": "Internet of Agents",
+    "links": {
+      "DMAS, 2025": "https://www.researchgate.net/publication/398102172_Decentralized_Multi-Agent_System_with_Trust-Aware_Communication"
+    }
+  },
+  {
     "title": "Vulnerability Analysis of Decentralized Applications",
     "links": {
       "CSCV, 2024": "https://arxiv.org/abs/2404.10376"
@@ -16,13 +22,6 @@
     "links": {
       "Degator, 2024": "https://www.researchgate.net/publication/383556165_Data_Aggregation_Management_With_Self-Sovereign_Identity_in_Decentralized_Networks",
       "SSIaaS, 2022": "https://www.researchgate.net/publication/360668065_Self-Sovereign_Identity_as_a_Service_Architecture_in_Practice"
-    }
-  },
-  {
-    "title": "Decentralized Security Infrastructures",
-    "links": {
-      "Bloccess, 2023": "https://www.researchgate.net/publication/364241119_Bloccess_Enabling_Fine-Grained_Access_Control_Based_on_Blockchain",
-      "Dagbase, 2020": "https://www.researchgate.net/publication/342313874_Dagbase_A_Decentralized_Database_Platform_Using_DAG-Based_Consensus"
     }
   },
   {

@@ -91,36 +91,36 @@ const PublicationList = () => {
 
                 <Content>
                     <ul>
-                        <li>One paper is accepted at ICAPS 2025
+                        <li>One paper is accepted at ICCCN 2026
                             <ul>
-                                <li>DynTaskMAS: A Dynamic Task Graph-driven Framework for Asynchronous and Parallel
-                                    LLM-based Multi-Agent Systems
+                                <li>NetAgentBench: A State-Centric Benchmark for Evaluating Agentic Network Configuration
                                 </li>
                             </ul>
                         </li>
-                        <li>One paper is accepted at ICME 2025
-                            <ul>
-                                <li>Spectrum-Adaptive Distribution of 2D Gaussians for Image Representation and
-                                    Compression
-                                </li>
-                            </ul>
-                        </li>
-                        <li>One paper is accepted at ACM Multimedia Asia 2025
-                            <ul>
-                                <li>Joint Optimization for Image Compression and Deblurring via Blur-Aware Guidance</li>
-                            </ul>
-                        </li>
-                        <li>Two papers are accepted at PRICAI 2025
-                            <ul>
-                                <li>SegEraser: Augmentation with Linear Segmentation and Contextual Erasing for sEMG Gesture Classification</li>
-                                <li>Dynamic-Segment-Masking Pre-Training for Multivariate Time-Series Classification</li>
-                            </ul>
-                        </li>
-                        <li>One paper won the <strong>Best Paper Award</strong> at ISPA 2025
+                        <li>Two papers are accepted at COMPSAC 2026
                             <ul>
                                 <li>
-                                    Decentralized Multi-Agent System with Trust-Aware Communication
+                                    OracleGuardian: Detecting Price Oracle Manipulation with Gradient-Guided Fuzzing
                                 </li>
+                                <li>
+                                    Beyond Rollback: Error Semantics for Irrevocable State Transitions in Decentralized Finance
+                                </li>
+                            </ul>
+                        </li>
+                        <li>One paper is accepted at IEEE BigDataService 2026
+                            <ul>
+                                <li>SYNAPX: Explainable Anticancer Drug Synergy Prediction via SHAP Analysis</li>
+                            </ul>
+                        </li>
+                        <li>One paper is accepted at IEEE AITest 2026
+                            <ul>
+                                <li>Formal Trajectory Analysis for Testing Agentic AI in Stateful Environments</li>
+                            </ul>
+                        </li>
+                        <li>Two papers are accepted at Electronics
+                            <ul>
+                                <li>Agentic Patterns for Decentralized Network Protocol Configuration</li>
+                                <li>SEMA: Self-Evolving Multi-Agent Auditing for Smart Contracts</li>
                             </ul>
                         </li>
                     </ul>
