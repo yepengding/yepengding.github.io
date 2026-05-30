@@ -117,12 +117,6 @@ const PublicationList = () => {
                                 <li>Formal Trajectory Analysis for Testing Agentic AI in Stateful Environments</li>
                             </ul>
                         </li>
-                        <li>Two papers are accepted at Electronics
-                            <ul>
-                                <li>Agentic Patterns for Decentralized Network Protocol Configuration</li>
-                                <li>SEMA: Self-Evolving Multi-Agent Auditing for Smart Contracts</li>
-                            </ul>
-                        </li>
                     </ul>
                 </Content>
 
