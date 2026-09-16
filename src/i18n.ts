@@ -16,6 +16,17 @@ const resources = {
     }
 };
 
+// The internal locale keys are not valid BCP 47 language tags, so map them
+// before exposing them to assistive technology via the lang attribute.
+const htmlLang: { [key: string]: string } = {
+    cn: 'zh-Hans',
+    en: 'en',
+    jp: 'ja'
+};
+
+const syncHtmlLang = (language: string) => {
+    document.documentElement.lang = htmlLang[language] ?? language;
+};
 
 i18n.use(initReactI18next)
     .init({
@@ -23,3 +34,6 @@ i18n.use(initReactI18next)
         lng: "en",
         fallbackLng: "en",
     });
+
+syncHtmlLang(i18n.language);
+i18n.on('languageChanged', syncHtmlLang);

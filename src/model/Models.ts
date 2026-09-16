@@ -49,4 +49,4 @@ interface PublicationModel {
     bibtex: string
 }
 
-export type {PreprintModel, TalkModel, NoteModel, ServiceModel, FundingItemModel, CourseModel, PublicationModel}
+export type {PreprintModel, TalkModel, NoteModel, ServiceItemModel, ServiceModel, FundingItemModel, CourseModel, PublicationModel}

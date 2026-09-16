@@ -4,6 +4,7 @@ import NameList from "../widget/NameList";
 import {useTranslation} from "react-i18next";
 import {BibtexParser, Entry} from "bibtex-js-parser";
 import PublicationLinkList from "../widget/PublicationLinkList";
+import {fetchJSON, fetchText, resolve} from "../util/fetchData";
 
 
 /**
@@ -29,10 +30,8 @@ const PublicationList = () => {
         // Identify conference type in BibTeX
         const conferenceTypes = ["inproceedings", "incollection"];
 
-        const fetchPublications = fetch('data/publications.bib')
-            .then(res => res.text())
-        const fetchPublicationLinks = fetch('data/publication_links.json')
-            .then(res => res.json())
+        const fetchPublications = fetchText('data/publications.bib')
+        const fetchPublicationLinks = fetchJSON<any>('data/publication_links.json')
 
         Promise.all([
             fetchPublications, fetchPublicationLinks
@@ -74,19 +73,19 @@ const PublicationList = () => {
                     )
                 });
             setConferencePublications(conferencePubs);
-        });
+        }).catch(console.error);
 
     }, [setConferencePublications, setJournalPublications])
 
     return (
         <>
             <Box>
-                <Heading size={5} id="publication">
+                <Heading renderAs="h2" size={5} id="publication">
                     {t("publication")}
                 </Heading>
                 <Content>
-                    <strong>[<a href="https://yepengding.github.io/data/publications.bib"
-                                rel="alternate">Download BibTeX File</a>]</strong>
+                    <strong>[<a href={resolve('data/publications.bib')}
+                                download>Download BibTeX File</a>]</strong>
                 </Content>
 
                 <Content>
@@ -120,7 +119,7 @@ const PublicationList = () => {
                     </ul>
                 </Content>
 
-                <Heading size={5} id="conference">
+                <Heading renderAs="h3" size={5} id="conference">
                     {t("conference")}
                 </Heading>
                 <Content>
@@ -129,7 +128,7 @@ const PublicationList = () => {
                     </ul>
                 </Content>
 
-                <Heading size={5} id="journal">
+                <Heading renderAs="h3" size={5} id="journal">
                     {t("journal")}
                 </Heading>
                 <Content>

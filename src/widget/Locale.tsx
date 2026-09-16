@@ -11,13 +11,13 @@ const Locale = () => {
 
     return (
         <Form.Control>
-            <Button text disabled={i18n.language==="cn"} onClick={() => {
+            <Button text disabled={i18n.language === "cn"} aria-current={i18n.language === "cn"} onClick={() => {
                 i18n.changeLanguage("cn")
             }}>简体中文</Button>
-            <Button text disabled={i18n.language==="en"} onClick={() => {
+            <Button text disabled={i18n.language === "en"} aria-current={i18n.language === "en"} onClick={() => {
                 i18n.changeLanguage("en")
             }}>English</Button>
-            <Button text disabled={i18n.language==="jp"} onClick={() => {
+            <Button text disabled={i18n.language === "jp"} aria-current={i18n.language === "jp"} onClick={() => {
                 i18n.changeLanguage("jp")
             }}>日本語</Button>
         </Form.Control>

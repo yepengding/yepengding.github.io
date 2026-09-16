@@ -2,6 +2,7 @@ import {Box, Content, Heading} from 'react-bulma-components';
 import {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
 import {CourseModel} from "../model/Models";
+import {fetchJSON} from "../util/fetchData";
 
 /**
  * Course List
@@ -13,8 +14,7 @@ const CourseList = () => {
     const [courses, setCourses] = useState<any>([])
 
     useEffect(() => {
-        fetch('data/courses.json')
-            .then(res => res.json())
+        fetchJSON<CourseModel[]>('data/courses.json')
             .then((data: CourseModel[]) => {
                 const courses = data.map(d => {
                     return (
@@ -25,11 +25,12 @@ const CourseList = () => {
                 })
                 setCourses(courses)
             })
+            .catch(console.error)
     }, [setCourses])
 
     return (
         <Box id="course">
-            <Heading size={5}>
+            <Heading renderAs="h2" size={5}>
                 {t("course")}
             </Heading>
             <Content>

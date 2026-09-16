@@ -13,6 +13,8 @@ npm run deploy
 
 ## Development
 
+The project uses Yarn 3 (vendored in `.yarn/releases`).
+
 ### Setup
 
 ```shell
@@ -31,18 +33,10 @@ yarn start
 yarn build
 ```
 
-### OpenSSL Compatibility Issue
-
-- Start with below
+### Test
 
 ```shell
-yarn start_legacy
-```
-
-- Deploy the project after executing below
-
-```shell
-export NODE_OPTIONS=--openssl-legacy-provider
+yarn test
 ```
 
 ## References
@@ -51,5 +45,6 @@ export NODE_OPTIONS=--openssl-legacy-provider
 - [react-i18next](https://react.i18next.com/)
 - [react-gh-pages](https://github.com/gitname/react-gh-pages)
 - [react-bulma-components](https://react-bulma.dev/)
+- [Bulma](https://bulma.io/)
 - [styled-components](https://styled-components.com/)
 - [bibtex-js-parser](https://github.com/yepengding/bibtex-js-parser)

@@ -1,5 +1,5 @@
 import {Content, Footer as BulmaFooter} from 'react-bulma-components';
-import {useState} from "react";
+import React, {useState} from "react";
 import {Trans, useTranslation} from "react-i18next";
 
 /**
@@ -21,11 +21,22 @@ const Footer = () => {
         setEmailDisplay(true);
     }
 
+    // Reveal on focus and on Enter/Space too, so the address is reachable
+    // without a pointing device.
+    const onKeyDown = (e: React.KeyboardEvent<HTMLSpanElement>) => {
+        if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            showEmail();
+        }
+    }
+
     return (
         <BulmaFooter id="contact">
             <Content style={{textAlign: 'center'}}>
                 <p id="email">
-                    {t("email")}: <span onMouseEnter={showEmail} onClick={showEmail}
+                    {t("email")}: <span role="button" tabIndex={0}
+                                        onMouseEnter={showEmail} onClick={showEmail}
+                                        onFocus={showEmail} onKeyDown={onKeyDown}
                                         style={{display: emailDisplay ? 'none' : 'inline'}}>{t("email_tip")}</span>
                     <a href={`mailto:${email}`} style={{display: emailDisplay ? 'inline' : 'none'}}>{email}</a>
                 </p>

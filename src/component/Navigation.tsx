@@ -14,14 +14,24 @@ const Navigation = () => {
         <Navbar active={isActive}>
             <Navbar.Brand>
                 <Navbar.Item renderAs="a" href="#">
+                    {/* 192px asset scaled to Bulma's 1.75rem navbar cap; the 512px one is 4x the bytes. */}
                     <img
-                        src={process.env.PUBLIC_URL + '/logo512.png'}
+                        src={process.env.PUBLIC_URL + '/logo192.png'}
                         alt="Yepeng Ding"
+                        width="28"
+                        height="28"
                     />
                 </Navbar.Item>
-                <Navbar.Burger onClick={() => setIsActive(!isActive)}/>
+                {/* Rendered as a real button: the default div[role=button] ignores Enter/Space. */}
+                <Navbar.Burger
+                    renderAs="button"
+                    type="button"
+                    aria-label={t('menu')}
+                    aria-expanded={isActive}
+                    aria-controls="navbar-menu"
+                    onClick={() => setIsActive(!isActive)}/>
             </Navbar.Brand>
-            <Navbar.Menu>
+            <Navbar.Menu id="navbar-menu">
                 <Navbar.Container>
                     <Navbar.Item hoverable>
                         <Navbar.Link>{t('publication')}</Navbar.Link>

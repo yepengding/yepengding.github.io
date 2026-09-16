@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 
 /**
  * Name List Widget
@@ -10,19 +10,16 @@ const NameList = (props: { names: string }) => {
     // Identify possible my names for special style application
     const myNames = ["Yepeng Ding", "Ding, Y.", "丁 曄澎"]
 
-    const [names, setNames] = useState<string[]>([]);
-
-    useEffect(() => {
-        const names = props.names.split(" and ").map(n => {
-            const ns = n.split(", ")
-            if (ns.length === 1) {
-                // If name is not splittable by ', ', then return name
-                return ns[0]
-            }
-            return `${ns[0]}, ${ns[1].charAt(0)}.`
-        })
-        setNames(names)
-    }, [props.names])
+    // Derived from props, so compute on render rather than via an effect,
+    // which would render an empty list on the first pass.
+    const names = props.names.split(" and ").map(n => {
+        const ns = n.split(", ")
+        if (ns.length === 1) {
+            // If name is not splittable by ', ', then return name
+            return ns[0]
+        }
+        return `${ns[0]}, ${ns[1].charAt(0)}.`
+    })
 
     return (
         <span>

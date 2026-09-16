@@ -10,7 +10,7 @@ const PatentList = () => {
 
     return (
         <Box id="patent">
-            <Heading size={5}>
+            <Heading renderAs="h2" size={5}>
                 {t("patent")}
             </Heading>
             <Content>

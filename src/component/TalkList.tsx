@@ -4,6 +4,7 @@ import LinkList from "../widget/LinkList";
 import NameList from "../widget/NameList";
 import {useTranslation} from "react-i18next";
 import {TalkModel} from "../model/Models";
+import {fetchJSON} from "../util/fetchData";
 
 /**
  * Talk List
@@ -16,8 +17,7 @@ const TalkList = () => {
 
     useEffect(() => {
         // Fetch talk list data
-        fetch('data/talks.json')
-            .then(res => res.json())
+        fetchJSON<TalkModel[]>('data/talks.json')
             .then((data: TalkModel[]) => {
                 const talks = data.map(d => {
                     return (
@@ -31,11 +31,12 @@ const TalkList = () => {
                 })
                 setTalks(talks)
             })
+            .catch(console.error)
     }, [setTalks])
 
     return (
         <Box id="talk">
-            <Heading size={5}>
+            <Heading renderAs="h2" size={5}>
                 {t("talk")}
             </Heading>
             <Content>

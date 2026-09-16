@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import LinkList from "../widget/LinkList";
 import NameList from "../widget/NameList";
 import {useTranslation} from "react-i18next";
+import {fetchJSON} from "../util/fetchData";
 
 /**
  * Report List
@@ -14,8 +15,7 @@ const ReportList = () => {
     const [reports, setReports] = useState<any>([])
 
     useEffect(() => {
-        fetch('data/reports.json')
-            .then(res => res.json())
+        fetchJSON<any[]>('data/reports.json')
             .then((data: any[]) => {
                 const reports = data.map(d => {
                     return (
@@ -29,11 +29,12 @@ const ReportList = () => {
                 })
                 setReports(reports)
             })
+            .catch(console.error)
     }, [setReports])
 
     return (
         <Box id="report">
-            <Heading size={5}>
+            <Heading renderAs="h2" size={5}>
                 {t("report")}
             </Heading>
             <Content>

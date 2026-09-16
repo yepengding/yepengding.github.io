@@ -12,7 +12,7 @@ const About = () => {
 
     return (
         <Box id="about">
-            <Heading size={5}>
+            <Heading renderAs="h2" size={5}>
                 {t('about')}
             </Heading>
             <Content>

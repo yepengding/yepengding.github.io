@@ -10,7 +10,7 @@ const Education = () => {
 
     return (
         <Box id="education">
-            <Heading size={5}>
+            <Heading renderAs="h2" size={5}>
                 {t("education")}
             </Heading>
             <Content>

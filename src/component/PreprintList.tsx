@@ -4,6 +4,7 @@ import LinkList from "../widget/LinkList";
 import NameList from "../widget/NameList";
 import {useTranslation} from "react-i18next";
 import {PreprintModel} from "../model/Models";
+import {fetchJSON} from "../util/fetchData";
 
 /**
  * Preprint List
@@ -15,8 +16,7 @@ const PreprintList = () => {
     const [preprints, setPreprints] = useState<any>([])
 
     useEffect(() => {
-        fetch('data/preprints.json')
-            .then(res => res.json())
+        fetchJSON<PreprintModel[]>('data/preprints.json')
             .then((data: PreprintModel[]) => {
                 const preprints = data.map(d => {
                     return (
@@ -30,11 +30,12 @@ const PreprintList = () => {
                 })
                 setPreprints(preprints)
             })
+            .catch(console.error)
     }, [setPreprints])
 
     return (
         <Box id="preprint">
-            <Heading size={5}>
+            <Heading renderAs="h2" size={5}>
                 {t("preprint")}
             </Heading>
             <Content>

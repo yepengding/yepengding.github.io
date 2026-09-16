@@ -10,7 +10,7 @@ const PastWork = () => {
 
     return (
         <Box id="past">
-            <Heading size={5}>
+            <Heading renderAs="h2" size={5}>
                 {t("past_work")}
             </Heading>
             <Content>

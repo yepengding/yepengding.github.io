@@ -13,7 +13,8 @@ const Header = () => {
         <Hero color="light" gradient>
             <Hero.Body>
                 <Block>
-                    <Heading size={1} textAlign="center">
+                    {/* The only <h1> on the page; every other heading is an <h2>/<h3>. */}
+                    <Heading renderAs="h1" size={1} textAlign="center">
                         <ruby>{t('firstname')}
                             <rt>{t('firstname_phonetic')}</rt>
                         </ruby> &nbsp;
@@ -23,12 +24,13 @@ const Header = () => {
                     </Heading>
                 </Block>
 
-                <Heading subtitle size={4} textAlign="center">
+                <Heading renderAs="p" subtitle size={4} textAlign="center">
                     {t('research_interest')}
                 </Heading>
             </Hero.Body>
             <Hero.Footer>
-                <Heading subtitle textAlign="center">
+                {/* Rendered as a div: Locale contains a block-level control. */}
+                <Heading renderAs="div" subtitle textAlign="center">
                     <Locale/>
                 </Heading>
 

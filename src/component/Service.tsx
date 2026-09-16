@@ -1,7 +1,8 @@
 import {Box, Content, Heading} from 'react-bulma-components';
 import {useTranslation} from "react-i18next";
 import {useEffect, useState} from "react";
-import {ServiceModel} from "../model/Models";
+import {ServiceItemModel, ServiceModel} from "../model/Models";
+import {fetchJSON} from "../util/fetchData";
 
 /**
  * Service List
@@ -9,42 +10,33 @@ import {ServiceModel} from "../model/Models";
 const Service = () => {
 
         const {t} = useTranslation();
-        const [service, setService] = useState<any>({
+        const [service, setService] = useState<ServiceModel>({
             editor: [],
             pc: []
         })
 
         useEffect(() => {
-            fetch('data/service.json')
-                .then(res => res.json())
-                .then((data: ServiceModel) => {
-                    const service = {
-                        editor: data.editor
-                            .map(d => (
-                                <li key={d.name}>
-                                    <a href={d.link} target="_blank" rel="noreferrer">{d.name}</a>&nbsp;
-                                </li>
-                            )),
-                        pc: <p>{data.pc.map(d => d.name).join(", ")}</p>,
-                    }
-                    setService(service)
-                })
+            fetchJSON<ServiceModel>('data/service.json')
+                .then(setService)
+                .catch(console.error)
         }, [setService])
 
         return (
             <Box id="service">
-                <Heading size={5}>
+                <Heading renderAs="h2" size={5}>
                     {t("service")}
                 </Heading>
                 <Content>
+                    <p><strong>{t("service_editor")}</strong></p>
                     <ul>
-                        <strong>{t("service_editor")}</strong>
-                        {service.editor}
+                        {service.editor.map((d: ServiceItemModel) => (
+                            <li key={d.name}>
+                                <a href={d.link} target="_blank" rel="noreferrer">{d.name}</a>
+                            </li>
+                        ))}
                     </ul>
-                    <ul>
-                        <strong>{t("service_pc")}</strong>
-                        {service.pc}
-                    </ul>
+                    <p><strong>{t("service_pc")}</strong></p>
+                    <p>{service.pc.map((d: ServiceItemModel) => d.name).join(", ")}</p>
                 </Content>
             </Box>
         )

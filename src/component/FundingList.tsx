@@ -2,6 +2,7 @@ import {Box, Content, Heading} from 'react-bulma-components';
 import {useTranslation} from "react-i18next";
 import {useEffect, useState} from "react";
 import {FundingItemModel} from "../model/Models";
+import {fetchJSON} from "../util/fetchData";
 
 /**
  * Funding List
@@ -9,31 +10,28 @@ import {FundingItemModel} from "../model/Models";
 const FundingList = () => {
 
         const {t} = useTranslation();
-        const [funding, setFunding] = useState<any>([])
+        // Keep the raw data in state and translate on render, so switching
+        // language re-renders without re-fetching.
+        const [funding, setFunding] = useState<FundingItemModel[]>([])
 
         useEffect(() => {
-            fetch('data/funding.json')
-                .then(res => res.json())
-                .then((data: FundingItemModel[]) => {
-                    const funding = data.map(d => {
-                        return (
-                            <li key={d.id}>
-                                <strong>{t(d.id)}</strong> ({d.funder})
-                            </li>
-                        )
-                    })
-                    setFunding(funding)
-                })
-        }, [setFunding, t])
+            fetchJSON<FundingItemModel[]>('data/funding.json')
+                .then(setFunding)
+                .catch(console.error)
+        }, [setFunding])
 
         return (
             <Box id="funding">
-                <Heading size={5}>
+                <Heading renderAs="h2" size={5}>
                     {t("funding")}
                 </Heading>
                 <Content>
                     <ul>
-                        {funding}
+                        {funding.map(d => (
+                            <li key={d.id}>
+                                <strong>{t(d.id)}</strong> ({d.funder})
+                            </li>
+                        ))}
                     </ul>
                 </Content>
             </Box>
