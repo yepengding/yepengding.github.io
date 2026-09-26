@@ -90,30 +90,27 @@ const PublicationList = () => {
 
                 <Content>
                     <ul>
-                        <li>One paper is accepted at ICCCN 2026
+                        <li>
+                            Four papers are accepted at IEEE ICPADS 2026
                             <ul>
-                                <li>NetAgentBench: A State-Centric Benchmark for Evaluating Agentic Network Configuration
+                                <li>Adaptive Governance for Decentralized Autonomous Organizations
                                 </li>
-                            </ul>
-                        </li>
-                        <li>Two papers are accepted at COMPSAC 2026
-                            <ul>
-                                <li>
-                                    OracleGuardian: Detecting Price Oracle Manipulation with Gradient-Guided Fuzzing
+                                <li>zkAuth: Zero-Knowledge Attribute-Based Authorization for Decentralized Applications
                                 </li>
                                 <li>
-                                    Beyond Rollback: Error Semantics for Irrevocable State Transitions in Decentralized Finance
+                                    Credential-Aware Retrieval for Defending AI Search in Web3 Against GEO Poisoning
+                                </li>
+                                <li>
+                                    Against GEO Capture: Decentralized Provenance and Diversity Control for Trustworthy AI Search
                                 </li>
                             </ul>
                         </li>
-                        <li>One paper is accepted at IEEE BigDataService 2026
+                        <li>Two paper are accepted at ACM HAI 2026
                             <ul>
-                                <li>SYNAPX: Explainable Anticancer Drug Synergy Prediction via SHAP Analysis</li>
-                            </ul>
-                        </li>
-                        <li>One paper is accepted at IEEE AITest 2026
-                            <ul>
-                                <li>Formal Trajectory Analysis for Testing Agentic AI in Stateful Environments</li>
+                                <li>JuryFlow: Disagreement-Guided Human-in-the-Loop Multi-Agent Evaluation
+                                </li>
+                                <li>Conversational Capture: A Trajectory-Level Framework for Evaluating Generative Engine Optimization in Multi-turn Human-Agent Interaction
+                                </li>
                             </ul>
                         </li>
                     </ul>
